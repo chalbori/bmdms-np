@@ -21,3 +21,5 @@
 	# Matplotlib-venn
 	conda install -c conda-forge matplotlib-venn
   
+## Usage
+Take sample/DO_SOMETHING.py as examples for running as described in the file name.
