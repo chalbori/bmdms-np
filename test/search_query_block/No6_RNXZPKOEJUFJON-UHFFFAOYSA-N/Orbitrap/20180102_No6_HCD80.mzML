@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<indexedmzML xmlns="http://psi.hupo.org/ms/mzml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://psi.hupo.org/ms/mzml http://psidev.info/files/ms/mzML/xsd/mzML1.1.2_idx.xsd">
+  <mzML xmlns="http://psi.hupo.org/ms/mzml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://psi.hupo.org/ms/mzml http://psidev.info/files/ms/mzML/xsd/mzML1.1.0.xsd" id="20180102_No6_HCD80" version="1.1.0">
+    <cvList count="2">
+      <cv id="MS" fullName="Proteomics Standards Initiative Mass Spectrometry Ontology" version="4.1.26" URI="https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo"/>
+      <cv id="UO" fullName="Unit Ontology" version="09:04:2014" URI="https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo"/>
+    </cvList>
+    <fileDescription>
+      <fileContent>
+        <cvParam cvRef="MS" accession="MS:1000579" name="MS1 spectrum" value=""/>
+        <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+      </fileContent>
+      <sourceFileList count="1">
+        <sourceFile id="RAW1" name="20180102_No6_HCD80.raw" location="file:///D:\Users\sangwon\Desktop\Demo\Demo data\20180102_Elite_Orbitrap_HCD_Demo_raw">
+          <cvParam cvRef="MS" accession="MS:1000768" name="Thermo nativeID format" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000563" name="Thermo RAW format" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000569" name="SHA-1" value="a961ada75233d8bd83bbe453b186c75c249de745"/>
+        </sourceFile>
+      </sourceFileList>
+    </fileDescription>
+    <referenceableParamGroupList count="1">
+      <referenceableParamGroup id="CommonInstrumentParams">
+        <cvParam cvRef="MS" accession="MS:1001910" name="LTQ Orbitrap Elite" value=""/>
+      </referenceableParamGroup>
+    </referenceableParamGroupList>
+    <sampleList count="1">
+      <sample id="_x0031_" name="">
+        <cvParam cvRef="MS" accession="MS:1000002" name="sample name" value="1"/>
+      </sample>
+    </sampleList>
+    <softwareList count="2">
+      <software id="Xcalibur" version="2.7.0">
+        <cvParam cvRef="MS" accession="MS:1000532" name="Xcalibur" value=""/>
+      </software>
+      <software id="pwiz" version="3.0.19172">
+        <cvParam cvRef="MS" accession="MS:1000615" name="ProteoWizard software" value=""/>
+      </software>
+    </softwareList>
+    <instrumentConfigurationList count="2">
+      <instrumentConfiguration id="IC1">
+        <referenceableParamGroupRef ref="CommonInstrumentParams"/>
+        <componentList count="3">
+          <source order="1">
+            <cvParam cvRef="MS" accession="MS:1000073" name="electrospray ionization" value=""/>
+            <cvParam cvRef="MS" accession="MS:1000057" name="electrospray inlet" value=""/>
+          </source>
+          <analyzer order="2">
+            <cvParam cvRef="MS" accession="MS:1000484" name="orbitrap" value=""/>
+          </analyzer>
+          <detector order="3">
+            <cvParam cvRef="MS" accession="MS:1000624" name="inductive detector" value=""/>
+          </detector>
+        </componentList>
+        <softwareRef ref="Xcalibur"/>
+      </instrumentConfiguration>
+      <instrumentConfiguration id="IC2">
+        <referenceableParamGroupRef ref="CommonInstrumentParams"/>
+        <componentList count="3">
+          <source order="1">
+            <cvParam cvRef="MS" accession="MS:1000073" name="electrospray ionization" value=""/>
+            <cvParam cvRef="MS" accession="MS:1000057" name="electrospray inlet" value=""/>
+          </source>
+          <analyzer order="2">
+            <cvParam cvRef="MS" accession="MS:1000083" name="radial ejection linear ion trap" value=""/>
+          </analyzer>
+          <detector order="3">
+            <cvParam cvRef="MS" accession="MS:1000253" name="electron multiplier" value=""/>
+          </detector>
+        </componentList>
+        <softwareRef ref="Xcalibur"/>
+      </instrumentConfiguration>
+    </instrumentConfigurationList>
+    <dataProcessingList count="1">
+      <dataProcessing id="pwiz_Reader_Thermo_conversion">
+        <processingMethod order="0" softwareRef="pwiz">
+          <cvParam cvRef="MS" accession="MS:1000544" name="Conversion to mzML" value=""/>
+        </processingMethod>
+      </dataProcessing>
+    </dataProcessingList>
+    <run id="_x0032_0180102_No6_HCD80" defaultInstrumentConfigurationRef="IC1" startTimeStamp="2018-01-02T06:31:30Z" defaultSourceFileRef="RAW1">
+      <spectrumList count="24" defaultDataProcessingRef="pwiz_Reader_Thermo_conversion">
+        <spectrum index="0" id="controllerType=0 controllerNumber=1 scan=1" defaultArrayLength="541">
+          <cvParam cvRef="MS" accession="MS:1000579" name="MS1 spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="1"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.080657958984" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="64827.953125" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="5.431124375e05"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.273723602295" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="573.223693847656" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.1.1. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=1&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.019156666667" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms [50.00-600.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="1"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="600.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="2580">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>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</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="3168">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>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</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="1" id="controllerType=0 controllerNumber=1 scan=2" defaultArrayLength="186">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="245.044479370117" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="2649.9482421875" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="44130.60546875"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.621086120605" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="353.975860595703" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.2.2. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=2&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.024676666667" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 331.08@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="2"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="0" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=1">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="64827.953125" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="1012">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwt0H9IlVccx/FzafunPyLr1lJinusfwzBIgi0jyOeKQb81f/S7dh4zvZnNnMuwkT23ETQvIzem+8t8bgXzUoSNtfXH0qfFMChSK2MJxvOwMZ1Bk7mkiDR8f/fXi8/nnPM9h6OU8k4VbbCUUu7tdRtnVZUJ9L+q3zSrPtaE3t0vUDWnxFNXxR/f2cz+P75HU/TRFnKkEK2D/0m+OncreUGXGL+O+t5gEXOWHijmHZ0nUV3pQOfG72glJ8RNU2iqZiQ/XbyNcx8sQf3+KvQzK6UfPoNe9g9orvyFVtdzyc/SSrin/EM0GWdK5B/ySjnXuL5U3u+gvjmEzi/zysjd6ah0C5r33i3HySx0V9agKhmSvm9E8syf6AznbOc9+/LQdKXQy3ks3svfQf8qIfZ76P50dCf3T97ZxfsSD9BKz96N+9vRXRbZwxz7LOrwuHg+fS/n/skQZ7pRHb+NemrOPu5rKkSvP7qfPlaEpvg0Wm9CBlvS0FuTJflkAaroNnS+ttEN35B9scDIf9o2817HUTd3SF5zAd3Lveh8E6B6GKrg/MIsVL0u+tMeOmsDNB9PSH75L1rFk9KXqwPsH0lH1a7RarXRqTwn62kXJJ+4hqbkV9SpUCX9aET8djn6rYHkwdBB3r0gC71qW/LFOlRdccneCDr14Srm1gbofDeFXipUTR6LoHqViya7AP1DFeKjKvSa47K/Jyn9hgfoxuwY/a44qpTojyVj//8XGid0iH/ojaBaYqPXk6xhffqWuDBAveJvdMtCh+UfIqi35KI5txqVFaDfHKplfk8EzUwUddgWt8fRa0uiO3QL/d/60BnIO0L/ZQFaiwI0bZFPOP8oiiZcgX5OXHJNElXskvRr8+vo25N18g8+6nZ1lPk/z0frsZb8IhfN9QHph3x03Pn1zC1sQP/zTjQdA6iDCVl3Wz9lPTGA7pNByacTDazf70Y94aEfHUVvvPYz9venUOVfQ10tmvzYMd4TTmuk78hstN4C67CAaw==</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="1156">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwtVHlIFHEUHqUs9Y/wIDzKHSUM8QBLyqJo+kNJM11tI9SscTVNV003lbxwW/PAXKV0WU23prCky1ArsDLHDg8oMiuyiBzFcj3ygNQOk/B7/fXx3u+9733vmGEYRlLpDnAMwwhWEUDuymDICmp+LMhXUJz9DpvtDAxF3GUBfqbLhvyDcWHAjgH4NekZ4cAhe/gli5n9wDlH5LOm6/Azy6FAUV5HfkUG+BiPXPDwkW+DocehOQJxL38GAV2XSMe7D6TTTg1+0dgD5Pf1oz7TMgEe6Zgc8XzVCFC0dEef/KwX4oWxp6SnwYbeF2yRz+X4Uh0n0sfUu6Ge6C4jvco42Bw7DeQHTdApedb9n+Nfmk99AtmydtKhbAM/ezOL+v0j4V3cag6/ZDuHOG5bO2zBYCBefQV08i63D6LvCy/gF3zdEcdnuxB/ayntYd6T5ita0D4+tdIcz0QhX7oRizg2qBFxXGaZnHQPaREX5nEE+npHI8HbJeTCv/o16a5OjkV9nTERPHuric9uZxHqyT/HIb7KCnXZgcGjQPEhzXtPEXi5Tus0YLhtDt7Nl/EuRP/OhF9BfWgURangC+lJgf7uFAX8CwEq6Ns8rAQWWp5CXM5pmufFR5Qf2IN6UqJPDOJGTfS+RYs8tux+FOL6X9E8QvX5QE8Z3XFx9HnkXUtB31xOkJrm+Iy+B/MW8Atf5kpRv8iZ8k8sluB9aIbuqsM6GnlrarEv6STdCfNkI/xMvwftTdcAXcKh9Crkhbyn/e/Q1yJvuykB71ojzXNpBDbTt3wO/UzV0B3EB4OXP/yR7rl5+CzsCQkorfMqR/xQazbyBR/sjX3zjb7D1Mka1De6XoJd2Q6/oF9F/WSWp8OOLcF8JLdi3DPr/IDixi2giy33KwR/nlkFsGYR8+ZU1XrwDjwuQN9MEuYrqmaonw0ttCeZGe5WnOymO/b+hTiprwx1Nb350KdR/qT8xKvU/9e2RsS5+yXDjjlO31+bN2xpbTzuVbxH++SnDEnQNW6POTC7p3Ev4lhzJd7VxVrw6G5hD5rg9dCjyfKh75G3xTzEvLsZ4Dfo0IemX013N7+J/pcFJkIFhzuWqh3pvxUTQHNtcsA9sf5O9B/Y9RzfibiYpgSf/x36rhpSaV99TeHcPyCYhjE=</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="2" id="controllerType=0 controllerNumber=1 scan=3" defaultArrayLength="93">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.080169677734" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="246.880096435547" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="6468.30859375"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.800662994385" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="358.87841796875" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.3.3.1 File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=3&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.032526666667" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 353.06@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="3"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="242.05741702672904" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=1">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000041" name="charge state" value="1"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="56958.671875" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="580">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwl0EtIVHEUx/F/IIQhphtB3dyN9lAwBNMS5I4omEqjOE6kjl41pVEbX6mb0AvhWAQmbnRQ5MLUgIiPkRY9Fg4MLlqIkrs2cxksZDYhiqAEynzP6sPvnP8593CVUtqb3ie6UsrW59GsuhLvBGuTRv6EUf07F2cn6ujPTtYntVYCT5Nq35ed9EOXYuBGA/XUGfHDAhq1G5Jv3WzEqkdofXVIvlhFwxnFSGoM9XhWE3WvH+3MBFrvM1z0l0SVPoXaTnUzd2Ysitlf0E443Oy93S8W7KHV/O0Z+9UPNMviYucpqrjxnLwZQj0nrYV57180s6KtGHrooZ/n8Mj/OMfIqr+d7+znd5B9j8W3dw0cDaAZc3dyf2lHF3vqP6Pa2ULbPdfNnbsJ1JsevCCPTaB5cohW7koPe45OemSupJc9v6pfUr/n8pKnnQO8P2t7Rb38kw9z8gfpF20P0a8RteOoWLyP5vp/tD8WDHPHu2K0gykj3DdZiHZFH6qfFmq+klHe3y9H3RNGdXCMZprrNfn3Gpo1YTSCu5KnK8eYK/Kj0b8pqgRq2ZnjzKf7xvVryVC2mQ==</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="588">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwlUk0oRGEU/WRBYkGDEtNbjlI2Siz4yE/j3xg0iEchwsqKph4TJTZTovzkFZFEikhTvMjCZGMWJiEvUWxshigGzTmr07nfuefce98TQuiPRZVSCGHePDVEULPdgevP70Dtpbse75ZzcKVIB8rwYBV0ec3VEVQ7AtDJM09NBIX9owJ9v1Hgxn4AqAYe6ZP7Q34Qg36laRqov483w6fRUov8WSvq0tdSh/fEXtSFbxJcs7iQa1zOgivtjS7kBv306xyAXn0pxbsRzGCf+5T6VTv61f5d7CNDOeB6ggf92vob6/nFzElZ4BxXO6hr8R8O9IfLcT/TWoJ307nN3LQLoLG1BFQcKvN9IfTpsaP0O5gAqofZ5JPjvOteIfdNecC99JUv9MmNNaA5mIVcZeQcXIz98W7uHn63nylw2bdMfazB+W4HwI3qVu4b/oa/6fa0wc9/xXuNxEGnzA/T9ziZvptu7tdz74R/eh7qousaqMwE4SePLzmX7RNzGnP8D2RSNOdY9DI3xLnkq4M5yVnM+Uvn3TPvhjDnURl0IvUEOtO7z7uPUi+sOrjqLcAeZvSOU/4DxE/DwQ==</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="3" id="controllerType=0 controllerNumber=1 scan=4" defaultArrayLength="441">
+          <cvParam cvRef="MS" accession="MS:1000579" name="MS1 spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="1"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.080902099609" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="45573.75390625" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="4.18822e05"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.208095550537" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="566.908813476563" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.4.4. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=4&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.039883333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms [50.00-600.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="1"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="600.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="2144">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>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</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="2616">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>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</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="4" id="controllerType=0 controllerNumber=1 scan=5" defaultArrayLength="207">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="245.044982910156" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="2941.76220703125" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="43404.5703125"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.841136932373" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="355.753021240234" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.5.5. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=5&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.047143333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 331.08@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="2"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="0" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=4">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="45573.75390625" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="1104">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwt0HtsFFUUx/EZSfqPREpLAyQk3l0fYNG0akgTWel0JT6p2gfVFtA7VdvaBSmIK9FQZxuiEhNtiltLVLxbG1uoUUwkoSGhA7X/qIkVBRcj8Y5aQaFYTXwUiSjf4/zzyfnNOefeGcdx9N7UXZ7z33PlM2LjNvR6XsGg9V0xnHX3JdXSEnS2VaKuGcTw3DgGZz6TvkML7rmkqZhBO1K7irmtfRgs242mWQxu/hb1TtELKqrZe/VydFItaLv3S/3VcXHmR8kPTmPQWHovHsqhs+9tVDXjqA9clLpz3n3sv7AAzZSH3i+x+9k3pwV1tgPD0ZdQrdottl1WQ/8LBRicLUGbWIQ6X4Zqzx4MV1p0is78P7e5Fke+R3Xs8jr8MI7612vEdYk6+a7b0WzvFTuHMXQ+rZM9X8q8+7XYfhrtUGU9/aVvok0WrmafPx/1y7+hc1NPA3vUigfIPyl+kL5J0Su5BdWU24jXpsW1J9CunNNEfcUuNO9tWkO+Jod64H0MqqvX8j49huH5Wes4/+etaAa7xHwfeteNoa13H6LeUCF+UYXhDUlUdV2Sd0SS3zr4MHMnx1Ed/Eb8x9XcIxFHNVCu5X8mpc76aIv70Ss4K/lVS33uOeqj93dGnNqBKtGP5s4hyV+NJD/qNnNe/nqxqQz16iSaP5rRuoclXxFhuHxS+pedQ6/BeQT7FNq5VRju9NEU9Yu1R9Bpj1DvdR+l/1QM9RtxDHoj8aj7GHuL4mg2imGbj2o4I/l4FnXpEelPnkL7wYzUi8tamPu8HL3hO6SOd2OwPkL1U6yVuSVJDLsy6DTkxFHRvPWOuGRRG30pH9VQBu3pnNSVEQad7uPMz/fRG821U188jKo4QtvkpviO3hiaqgjVc+56DGNo5vkYFDyLtj4j9Ws51Av/ROfG5zeQZ2NPUB+vQrOwGVV5BnUqJ3X1gLxvzGzE13Oopiw6WaeD8w4UojNZgiavJP+rHIPtO1DdlkO9f0LqESseE/X5aelvvYChKdzE/3nRRzU7JZoJtGMnMEyfROeHaQzyT2/GgW40Hxl0vtuHYfcE2sU9T5Jv+XgLe+dGTzH3e2Ga+8xOpL1/AQlioMQ=</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="1252">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwlVH1MTXEYPst0kVzX1zTD0TLEtJU0yXbYaCrdvriuyPGdFkpC7NZpo1amVBay8fuDDLXRx3yMHEJGUVjI4rik/inKEGm4z/PXs/f3e5/3fd7n/Z0jSZK2tSdCkf7jvLGxLpS/WBArD7uXu9DokyJdKF1rjwJmhVtdqOa8XOFCUeZEnh5SE4P7c5Xk/W4OBVbcDMN9Qif53tMRy3HLwNezF7H/gy3hqOtZB75kfAUqoUnor4VnIxbOBKA8JJh1G9Kpd3cNYvGhAX1UZwnOpbpm6BLmesTyxck25Dty0E/3MONc9fkGFJo/dV3OAxrn44inAsgfmRUN/rA69JHXLgcab+dyjp/uyNcGJyA2tm1bDfT/wjk87tA3OQk+aj9KyZv8jH2y91PPwF/ky49H0rdRjzGf0RvC2P8p9Xz2Q576/Qj3Z5ZQV5ycirlVI9FKfeORJ2Z6QY/wlah7px91xnqR5+ygfyKS+1zjSd7DeOqedRV9VFsv58kNBCpLMuGL9n486sija3keP5vvxX2Q/P0tyBNZCzNxb85bC97reeQVjKA+t7OcM4p6hKUb97p/F33rTE7kXoKotzomBfyoFvYz7cOexbIm9FXTWrnXKfPXIW+2jwP8xnr26UhNAgY6NoGXYbGjz5gG8OQm9tEGh+4AtpSmQb+vD30sd6KeciED80mtkfHA2967wD80h3tIuYt71bED98YqM/j6nKGb0XeGfR/QNAL+aylLmH/LbyXqed7cjvy7cfS/w8r7/OwD6F8yLQd1b9jgo7rgThzOeyfCHyPgHn2OKIQPorw/F/XyVmMfhq2M7+6+A3VEf1gq+igqv6Nntdx/ci338Xwjzo25kzCH0vqEc04Mpg8L7dxH0EXyk9uPoV7e4RPA4E/wW7t/jX2tj6BHabZxPksQ6siNJdiHkfntEOrcPg6U8/vy0eeSVQNe78Hc0pF1xeDXvDmD/kvd0F9vj9yK8/xbBYi73BArgR3Yp/7adBS4t+046vdWcu/2YvgjEot2ot7pIswlpenQqVd4FSLPGSAQf9C4F2dSAurnDJSDX/EO+pTSp+sxT0889i5XveRciS/4Xl5dgc+GRzrr3NizEfd1wzcgDud/SHb/xfdvKubep1j4vxnWDj/06o9boMsxCf5JH0fBd6WKfigDY/m9dTZmoE5LN+u5lXFf/W34zqRo7ldct8MvsfgS9Mj1B6FDr29DH2ESzGt7z+/qTzP/C4uboNsIGRet/AMS+Kvb</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="5" id="controllerType=0 controllerNumber=1 scan=6" defaultArrayLength="97">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="82.907135009766" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="106.393341064453" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="6459.95361328125"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.982860565186" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="353.065856933594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.6.6. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=6&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.054973333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 353.06@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="3"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="0" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=4">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="43534.125" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="600">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwtz09IVFEUx/ELiZRRYES0kotlChG0ceFCuCilNWRTaTmjk29mxLRS05woKJ0IIrVQaDNixqDuhBBKMNPhYoioIMGAMrPQRy1MN1lkC/+Qvu/1bT78zjn3vHuFENb8s0tK7H0q9bKjbD3kctTHwqjKJ684WvnBEubaNlAmPVfJ9c9RzZW5yVVe1HNp18gvi1H96r/uaD98egN7B0odo0fHULxZQflZllFfPoPW2/Mm17lQbcVN3j55k3lX9i3yTBNa0f/G/ose+h9iqN75vTjlq+B/iyHU71tR9U2j/WkGo23ZlWY+gNG/tSZ/TaLcafQx33f6NnnqLoZH1lAEA1XUvyfQ/raKYtjnx4Ug6sioMZZAmXkgwPzSOdTxGIriJIYTP009LT1I3pRojY+hfaq6mnpRCHVzD9qz/hr2f/mN1uGzd3hXxvFa3nXQbcyaQPE4Use5zhHUWdOo2mdRZCyYesfQPfa98txn33oE1YnX9eQCo07pQtEy2MA9/uw78KKR+/Yk0c4rf8A5WYGquwbDK80oPq6b/oV/pl+Y2cT+9hKUcbfJ4gmqHzkt7M2NoPKuhnB+C/WR9EdqFwUvygI=</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="592">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwtUkkoRWEY/YsohQ0KyV0oQ+Kpt6HoZip6nrHMuSIWyrBBsbhPqFfySBELXQnxiBIZkrvEQhYUz3SFeBZEypAynGN1Ot9wvvOfe4UQevaNRRa/2Daf94ciyhdcXK4A5aDkXHDVlgN03qIueYaCazup6MunHlZg+BxQMQWjry7eQNeouijAvHaBfS3+lf3Y0TLoPi9zbuGZdVcddI3ya95//78floQ56fMQdaXmFVy2HdGPuZZ759/Ui30A183l9Le7RH9tgdx7TwOXjv0KMbdv5Z36YOpUd9G3oxIoWXYL+c5b7OtF9nzMjUQCtY865tiRBF2t00699RX0dXcF3q/M07fxkki9+zjo6+MT9JN8B9RdEZwLGCZq3fwu/mfMsbECdaWvGfqSrYl5OcewLyY6wNUh5qCZTjCnttaXov/mYJ7FBjHFi9iyxfve/eTT6czR+kW+UcV8Eg7wPuXRxTzWEvhdZjaZZ9Ys+vKOG321PboIe4Pcl0L+c3Q34D+QHYGsT/Xw3p4f/CoD23yHOQY5GRnR0DfGmKcxGQQuvsrYX+1lLk/d5MLEXDLv6P/Kh36c5yXyDzxxxzw=</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="6" id="controllerType=0 controllerNumber=1 scan=7" defaultArrayLength="468">
+          <cvParam cvRef="MS" accession="MS:1000579" name="MS1 spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="1"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.081146240234" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="49396.35546875" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="4.7119709375e05"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.028285980225" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="573.02978515625" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.7.7. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=7&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.062843333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms [50.00-600.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="1"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="600.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="2276">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwt0HlQVdcdB/AD0iSNVkGiDmMbLyBYNSBgDLWE8b4nNmoSVkWpQe57j8iiuAButeDBrTFVi8SJZoxwBTHJgAlCp9ZU5QAG43QYfYogjY2HLVW7jEBqJq1Lp9+vf33m+9vOfU8IoStHLTKFEPbzoVC/0gHV8MeL/69V+xDqXalvoP6Tq1DMinkTOl+HZuLGRPTdTVDu/gOz8zIUZ11JqHfnQnF8D434CqrmyGS8l5QC7dJs5i/fh0ZQO9THOqGZ4EhB/btFUPzm99DsugHl3YfQThOp6P9sP5S/OArtnvg05GyfJdjTEoq/NEMdG7sURs2H5ielUP68k/lISTru/LYK6tpzUGxpg+YLY5fBnI1Q5nwJLbVwOeb/mwztEx5oDhdAOfguVLvPcy7/AvuXvud8zWMouv0yUH/HpGMXQP3gPDQKXv0l6mXzoLw0H1qbE6Ax/QPWLzZwLjRhBfKDy9C6Hf8W3jv0GlRjiqB+p4X1zW208RFdF5eJvaB5mfy9DmjeWACNvBKo9+xmvnuec5ebadEjzt8LX4nfNzkSKq8Dmh2boW7YCa2tl+g+nyzc2z8Nmp8mQrHMTSdugtbgXqhv9UA5TliYrwuG1pJwKDdlWfy9Fv3cBe3WUiiuVLIe9jUN0tBwDXK/QbhwN+Y5qGZPgfbCKNb9JXPkDigjyzn34DAUhdWc67jA/n+aoT6qoRHRxxxwl3PFE934/tpKKF+1odlMxS0FjYU3oR2uoU4aZs55wvlTwoPvODAGytYg5m0vQvOMAXVdMLSnhUDjtSzOzXQzR2yng1TWV7Mf1QxFjuKd9lb2+29D6/knzI+ptURkY+7MFGisMqA9RM3AUOad8cwOF+fy3VA8KmXurIbWNxeY17Tx7oReKJ/xfxv1a/Og/SMXNH3d0IrwQHm1Cqqyatbvn+TcXGMVjI6CYlECtPZmQT3agsZqD02qYn9mP913D8rRU3Iw7zKgPEjVjWAoToVCu9BJM5PZ/yoLWvkWNAaoGOWhcTZddZye1dBM7+edqXd454CRi/26EHrOhOr6SuYr7lz+rvXMb9tQ7qpm/Qy162qgWam4n9PC+R9qzsf3sn50hPVmkYf5RwYU+0Og3UXVj8NZH3Gy/jeL8wkeKD1VUD9ugMaYFs5P7YDWxa+ZE6fkY39HCBT1odBcOxXqnzpY9/VAFUutl7KhEVjG+WnVvCNr2J/TSGd4oezv5f7Yft7zG+De9FGr8c7cYCjjQqCVEQrFF9T2DYNGucX6vBzmvNPsp7UyRw5A9c+nLh3i3bl+a/Be7gRol4VCne+AYlsKzUulC1ZCo8sN5f4aqJ7tZT771MY+3u3pZ34wqgB3Y0OgPOyCVrqbdeEpePr/QXFoFVT1Jzj/uWbu6WPfd4D1yEHut/9gLb5/Zeha/q9hUA26oV5+Appxiv2NF2nJAOtdYeuQ81dA5VPKHH8cWitqoN5zgrn7JP3sJjQKb3PvZj/n0n3XY79gHDRiA6BopHLGeNaPBdLWxVA1JUOzNYVOSuVeRD60m9ZBPXED9+YUsu6oYN7RyDsfUjmpCVoHWln//grvht3j/M0h3h+hOm+Y9YQRzpU/4X79+A2oL4+BsnYxNGelQO1Ipe8W0roiKLzlULVVQPvCB9BKbOO9WirneHnvreucXzzEO4fHF/K9EGhEpkLdQq1ladDM3EBXF0I1uQiKI1TN2Mn5dpv7hpfZcY1zruusJ/XxnR3jitCfOR6aO5/6j0Bod0VD46WXofZJgcKRxr2uCs73VnO+owHKvyvON3pZ76Yy4hpUilrneukrfZxbM0wb/YvxTncg1N9FF/NuDLQ+nM084WWo/JycH3uQuYoK/R7z9s+Y3zjNexktrGd7eecYVfXX6Opezv91iLkgYCP+h48MqLbOgtZoF7QD8th3lkBT/Q7K2xrqb+5Ace8+95YNse4TsAn7zheg8A+GxuRoKDfNhurb9dB6uIX15ZL5lJd5jM9mvFvkD+XE6VC9GM1cSc0/rqe3tkPjCwmt5yqYPz4O9aefcD9iiP3hEXosagu+c1I0VL0x0Cx2Mt+n5utLOLevmPUju1g/vZc57SA02g5BXeK3FfU350PLNxWaGWn0SAXrJ6uhPN0IjaleZmcn55IHoMj8lnlmxa+wt4uKfzVB0/ci/fNV1nuuQzuyE8oeDXXcAPdHR29DPzETGrkVUKlD0FrQwn5QJzTDB9j/0zO/Rt4TBUV7ObQzKqCM+TdU85eWoL/3fajPGhL9j6ZBkZ5aBuPvlJn/A1GlxUw=</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="2776">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwtV2lUVtcVfeCwrHGJoi6FAHkOy35KMShiHSh51AAqEDVqiBj1gVGgyhTT8ikSH4PIEBA/G4QPJG9BAcFIVRRja8gLRUAc4oBZFkVuhBgU2yiaAFZjl3vz66xz371n2Hefc+6TJEn+aU+YIkmSWOO46ZVU/2BEv5LaPvfNkGk56ispRTiGvpKK83TsU+xeQFfv5OG7crOcckkB7MlJGr6LcDvoyvFk2nEfg/NGct8W6O/Owj75Gzvuj7enX7dz0PU+b647SvRXIPO8cmY9ZJn9RsgRFqyLmxexz3C3wq922xnr+pwxm2l/Lr5rr2dRhrpin+6esB3xRD3APuPu9Q/hzyYccctNNYxzegPz/7Ye8as7VhA/swd0ffiTP8Ou5QHOaSl3GV99AOPK/w7r+pUTkKJzAfwYq+7ArnzvDcabmvcRpCn7IuTZfVx36TZDnuioh/zX0WTEU5aDdbk5/WPYHfGM+ZXYJWI9II26NX0n/E1zikX8GZ5cL52D+MWVscQ38D/ggZ7vQV4UZiJedenqONhzfRYPfadXLvY7vs78rNFlsDPHzHtTK2kv0gn5GMOi4Fes/y1wk8blEMeAO9CVb7oh1Z6p4fBzvDodccSXc//sITk4H3QLdvRr0chXfz6D/BiyKgp2zs6E1MwD22BnVy3ykc+sxDlDHZeCcz8Rd6nkJvn7O2/Ge21YGr5nVQNXIyjYzHstAp5izBzkLfa4wK66yAn+pGe+uH/52T3EK8y74F9M6sV3sX0o/GorDOCoto4gHhWDcYyIJ++d94KHkskX+Yut25JgV2zYizjv7SYeNqshNeUQcJAW3wKfJGX8aZzraASO0sPACPgb+4kFetcu3uPYu7x31zLEqU2YjXXprYeoB0W3JU7Fy4mfzwX6bfTCPrG8MQP68Oi/wP6vPpB69zrEo2avKoGdGYuLsd8vE/60JzGQis/jk9Bb9sCP9GMgedmxDP712KvA0ziVFInzBVHQxcXKT7E/1Q/5Ku91Ay85Q9mPcxUK9Rv3EY/kFIm49dpLW2G/Mh1+5ImKBj3QRD/j3ViHUSnwJ3X6E8/67cRraEgy4l22lv2k6J+oA3mUWz7st+cDR/VFOe1NtEce2sudOG8cvg4eqS43UA9yuC9w0iIr2fc21UPqL+thV2poQL3Kp32Jz+Im8mhluxXScgU4qKU1PGdui4Gd9v0FkFXjkJ/mM8A4MsbyPu1WJhOXDNb1VJX8bTuCfEVMUjbWTaN5D3nyHnyf54O6kOKesk/e8ua91/bCnpjgSD+bkoivayfyk9VznCthj6Ebo4KIn+9t4tLvyXWXRPJjQzx4r55cyLkzfRp53LYfuCgHbFk/loXE0bP8OOJsLsvE+WFW7BM/2LPeF1WEQe/aynu8H4c8Nes69tljgewbOV3Ea93LXbBvXcp+GtxCXkT7sH7mzgTO6tpq1sn3G0qxTzVgTwTEoV5F6xbEI134I3F88ynnzOMqzoug+amws/45687yHc5rve07YPfwEc4Lu/3AWfG2QIreHOK7ccE+yH+nwK74pRB5ar+MZF0kPgJ/9Nymv8K+/ULck/E4iPuqJnGe2Z6HX+nkSvBTzGyHrtYM571kLON8LQg5Bv21w4jPaJiPfqjeCOWcyMpkvbxX9BlkcinjdpqFdfnju+xrT3LId4+DxHtUMPuGORh46EmiBut9PZyPc88hbtVPEL/LX/yA9ZwF5H3sB+gjYqgf62tLIudCdiPvbVY1eT0lnXG6WeFP9niH/aaln3F7cc4Im/WMy91AnmqMB+dJ2Kesn6GXEYdaOptzd2Ay7GidwbRTTBxEpyv5+TxkcE4+It93hKFvGlu9sa44XiIfQ/qxX7l9CnzXUx3I3yW25FvozsF8l6CfS+MdCmH/1Gx8N7q+DidenYNzn/NAnnKVeZsmkg+l9qhjcckL80T2j+D87m0m/8o+Io4P68nfTS18N6S9y/q0cu4oxeyzRoe5HPqLGKwbmw3yasID4GzYSeRPz1uX4X/tjc+h+xwArvIKT/qt+pJxK83oo9LbD1mvCVPR141RibCvlswijwqn4buSUkOeJvJdpF3zwz0ZrZXok7IlNxnrT1dzbnvs5j30eRDf7dORl2yqw31LEVmIQ2/rQB8UPx9MwPdib87L0WbWb1E190d2ca5/3s937QdOwE0kH2R8h97nvDPOD74r2/iesLGyv/m3k4+53x6ArItDv5Syzegj6orR5Fcp57ay18T6mZzG+bF7/jbewzzkqWa5dEPfOLIB+4/moh6NpHmfIK6Il5yjLUv4bvhwFftY3wDWlalL4V/MbAafRN0A424uZ12ZQ8in2q8Qr/7k7TM4t6jzEPY7vIN8tI6jiF95FPgj1psS+J7SLho49/5uzE25px1xi/8dLIH+e3/wUiRYWEemMOJ64Cnmt3G+GPch3Rl8t24bSZ5U/B3x62v+UcG4W9kHz7ugrxinU+k/+TTikuqX45we/Cf2u2OFqCPxtS3fDW3O7AObg8jv2jj2swdeXHd7je/UEBPevWrRZ6hr1fm/rGebC8DbOBGG+anMzQmDLAoFr4wZZ+FfmxIL/I033myE/MoEf9KXDsBF9lc4H+ruX8J+82T0YfkLB9g1Ft5nPlXZrAObfPiVMjL5DprUijrQV/+N7/am36Bfqr+Oxj59bUAe9OvfD8419g295wjru5/3YxwnL7VxQ5h//3LsV6yx5EPpGfatisPE82cf9qtzWZBKwhrW++SrvE/PEKyrzQH8v8m7BnzUupQw5f/JM+6T</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="7" id="controllerType=0 controllerNumber=1 scan=8" defaultArrayLength="183">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="245.04460144043" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="2714.537353515625" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="46204.484375"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.838130950928" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="354.173217773438" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.8.8. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=8&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.070158333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 331.08@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="2"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="0" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=7">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="49396.35546875" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="996">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwt0FloVFccx/FziVuM1mClMQ+FM4kEDMFUKIVUojdBFK1RsxqX1HtjjDpjXNI6St3ulNIXcSFxSFtFz0QfBgwlReKLUU8MgoVWhtqAfZE7saLSIlFckFBT/P59+vD7nf9Z7lVKhctjK1yllImmUNXfxiDnIYbT0yvfqWes/4K+LYrhybxV9G1LUc1NY7DyEtq+nBrOHVmymrnIALrJZWve6XVfRXNZVAXD4pYVazn/zGp0bx1Gm3dHXNhZy77r+zFo7UEv7yqGE9dQjT1At/JcHX3J03rmXv7awP64bmTutya00yY1YVktem9axOKSdby/4hQGnd8005cfE/v60T56hibdvp77giOofvxJ8u15G8jF1RgeWIruhZqN7KvYjeq7MdRTGjZxbkkThvFh1Acz6L3OaWE+t0Ksd77kvJ0foL73KYaZKvTqvpV8oguDyS8k575FWzprs5w/jMGk5+j953jkj+egXVSEeupCyYeqxW4fzYe9sv7qjrgji96g7+N4Au3Mk2j+FlVlL2rdJ313Vvq7Tiv72ovEf0rRfl+Desig+3mv5N/TqB5YyRNisCSLZlnhFnJSo9vli7N7UdfdlBzNotc9iupxpI3/tWc/un84W+lnF6Hd7qNXHJc+nUB3W2E7+ZKzjf2PI+jOr0bl+mKQkPXrKXHWzzL3wwCaz3K3c0/UR5NOoH6SQm9xVvrDzg76Ah9tVas44Ua550YqKv9lSGx2YvyP0xHUbxajeX429v6/oXvU2ck5NyJo3lZhMMfHsCGBqieF7t0h9D4albmS2g76wmyHvHvmLnIygnqkCm1Bq/QdUVRlCVmPpdDbeFH6XeMYlJft5v4CH01jAm0yherfEHWP2sPclXw0f2rJLz8R9/ZjcCUj6yMh2ldjosnfy9xgJdrAojmfkVwaor4/JqZaOnnv/RNozCnJo/2oYhbt8YysDyS/Yt9fXV/z/c2/YOgs2Ifj+XHed6so7v4PBsJzEw==</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="1132">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwtVGlIVGEUfVhNRpqJpoFJLw0lUUHNhQR9MoW4ZmmUY6OvtMTMGVwaTUGeW5Lm2kbk8oaUhkQrW0gUepZNRlpSoblUzzLEBdPpRxkW5bn9Onz3u/fcc8/93mMYhveejeGYf+gfDpT/dEWvolSiwJnTaiKB4nD4Koou5rjnXxUBmbGFiFVkTSrk8e2ldP/rbhTwfhPibGM9ztIbW/BKbXrid6wBL5enojrdFyAbYcC9qOrfj/iPzYhziecP4j5TAz6hJ4h0ZxjjEXfXEu/441icPTwOQGe1AnXSoULcM30szcncxr1kyVH/ei3xvqyg/qmUzz6Nhg4pbAb34rwKdYIQAl654x3icmcZzRnWQfkrCpzZRX/yuVtP+gOyElD/gvjldFvKK5oEL+uQRfGpa0BBHXQOfSu2EG/d10TkGXaTPimJ8qviKP9wOs31JD4T58atGuQNOFLcb4J0jk9CDzdMdfyMGflTbk+onuMRX5hFX075uhjY95n8NNek4f7txWPQt2ERc4n2O0jPvhU1+jqNpCDP66oW90p6H9zYHvguhhbroLPX+N//78cRH4/JQp/wIZrbsIz3JHp1kN7JllTorEymuQJcqa9lGu1jbYOG5n97BnXOPuSPMSId/Zus8U6kodoSxCOEeuRlt5O/Bd/oPfWYoZ4zuaEPb9leiTr3RPKjfl016tro3Qr3TPBd7jPS+1NuJ596JdTx+veXgD4fVKhfsDmF+mf5F4AjnvCXb/aDPlmnBI8si6R3+jr0yvMPKpDPd9WCJ/hTHupa3Wg/2d7wUapKoX1+VFxB3Uh/E86BN08jf1dLDeatdSW9DovYi6zPwV45i+AC8ARvqsN51Af+MPz0ZWCcMh+onqN39miZvq9JCf25+SXsTwixxXuSlgapj10D8d25pUedfh77FPYG0ncf3A1fWBvfVuSVWcNHcWcofZ/rJyhPsQhfGM6O5lV2ZgDLLUoxR2wL5uDPJp9EnnN4Dvji3E8Ap2Npr2WRZajb+LAc/D+bjwJNa5qhy7oZvjIuAuZgBk2FiOcOJKGPrxX2zkbdAB8X30Pf85QBuvhcLfj4Kh3Nf+Q5fR/6UcQ5q220Z6dO8s3zN85iQg3+b6JUGcP9BT72e08=</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="8" id="controllerType=0 controllerNumber=1 scan=9" defaultArrayLength="97">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.085906982422" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="128.262985229492" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="6344.38427734375"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.548305511475" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="355.468505859375" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.9.9.1 File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=9&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.077926666667" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 353.06@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="3"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="331.08065908365779" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=7">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000041" name="charge state" value="1"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="47719.5078125" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="592">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwl0E9IVFEUx/G7SHBI0lwlCl2ZhJjARSXTH8rLLJIcSad0LDV9DpqW1fgn/IfgQ91IFjW1UJjFKxRE/FO0qCDi4c7FUGr7d4mxTRGpSEMQlN/7Nh9+57xzz+UKIXTppctK/P/SRpn5gPZ3D60L4UrqySl0QsvoDq2bXLSNdmI1vK8qq6ii/6MG9dZwDfnLL7TlQoTzxr8a3fNXmdvoRG2/RFH4ytSfv0V3PYNW8Mg16jt+FCcfoZzfQOtstBYHDtXh8SDKZypK7l5CNVNSj77D1zknNIC6oPEG+yYKG+jvNRvzCxqZnz1nbO9A/c5D9TC3ibmc/Jv0nWq0N3+iM1HWTP4YR+VNoSx6ipb4ZhwdaeGcsUlUAQd19IRF/2Aa3UBFK/21sLE+htKXQB1fMXpG60rK/Dc7GKPeuoDyxSK65e9Nvc4oI14bc1klt7j35wMdvFNaot30G52qjLHa7aR+MXKbPLmM6kwKxfSuyYm/aL/puUOeDnWxfzCJujz3Lv1ALYpjn+6R/ZtxPOr0cK8nsV727D5GfcrXR86+j/ZW8gFWzqFueW38k9fPvtPFKEaD/eofJwjEKg==</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="628">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwtUl9Ik1EcvUn+AXNQL77s4Wujnny0xUjpPlSEtuU0GtmDHxgShqDGIIvqcyAsGh9RLTRdXQjERmLgRJgItxdjw0IYzBrIPgiCmQ+1KIQeiu+cng73/H6/c87v3iuEMNKBi1IIYQbjERf1nWIXMNjZ7aKz50VdlW6yb+BkyEVhR4hLiR4XjeZF9Funpy8A90/w3HeXc9lB9Jsvy5ybGoafsB6hX440g1dPU+DlVBpnGT+Huhqfoc95C7wzfysMve1l5kt/QG4n/g11491P9KtEE+b17AH0O5UieCffAt6MrcHPqC5jTtsTYfrYzLdwnH5fWFc/yvTrGUPdWRXQsz7t9IFvLGFvuVXg/rfn2HfqNfzExlXoq6SGjjP6i/tXW6GjhybI/93jvt5j0NXPcjiLjznm9KSIm/fIPylRP7vLPC8S9Pm8wnu4pIFSXue9ZX4DdVuF795xphfzR3LwN96H+A7R2mXo/fGgLt+e5f35Bjn35jt91rK8n0MPgdZsA3O8esD9lxz0iXI3ePPGNfon/797nZ96/THsK/1V+Fm+Gt/h6FfksuoDzPG8Hbyy7zNPxg9eFTTrI4+Zf5L/zBxuMqF/MHIFeut58Fb0cK/8B+bYyEo=</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="9" id="controllerType=0 controllerNumber=1 scan=10" defaultArrayLength="425">
+          <cvParam cvRef="MS" accession="MS:1000579" name="MS1 spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="1"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.081024169922" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="46197.234375" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="4.211448125e05"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.514415740967" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="596.369262695313" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.10.10. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=10&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.085805" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms [50.00-600.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="1"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="600.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="2060">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>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</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="2520">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>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</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="10" id="controllerType=0 controllerNumber=1 scan=11" defaultArrayLength="204">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="245.044479370117" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="3474.583984375" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="57445.3828125"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="51.24532699585" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="359.057342529297" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.11.11. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=11&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.093051666667" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 331.08@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="2"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="0" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=10">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="46197.234375" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="1084">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwt0F9sVEUUx/G5MUZiQ1JgSYMxendtYkEkxMQ/D6Wd1hqCtcWCtIB/mLuLa7sttpWl9EHWu8YH/6c2tiYqYXajoYlK4EEbQ2yHij6A0bbaRJ682xj5owIvipW2Gr6nT5/8zjkzZ+5VSkXpI1u0UkrPn0Q3cMejNwyHetGWYo03NL+m0O67jH664TFc0YxR9ZUmcqqpmbnGLjT3vY7u1U8xOjOF6t3rqEert5Jj3uP0/+1H9dNRNGXnJdckW7hn7juxYg7NYmIb+4I0um5RnT6GprlyO3sO3SP2PoymqRFVNiU5ewajvcufIB851Mp9H72Dqs6if8sDbfTv/hL9SYd6Tu0kvzWLZt1vqDtv3cX/PNGL0ZYsuj2iyV0Qyyp2U++rRNPfgHYsg7olRHX4wSe5b6r4FPMHv8ao7Kzkazc9jTsTaKYc2ibvGc4vVKGZrJPc8jLqsH4P7584KD7yIbp5zzBfnRBfrDeyP4/6vMVoRRHVaz+gbS+h/1UQcC7WjmEmh/58Hl11Ufprz4mDJalX/ilOe0n2vO9jtDKB9seNkhtqUHUEksesuOjQ1ZbEVpVi/7CPbjBAfUV00/mU3F9Eu21C5pMLUh/x9rLnUhyNDlDv8J5lbnrJlQn0OwLU34h2JI+u+T1UFwoylymKuiT1T+5KkzfkUHeU0B31nuMdm8pRXYyjXVuPZrNoawOZy+UxHC+gq1iQejpopz6SR3OxgH7VBOrakpjzOuifXoPhqbjkxTrJFQHq+iRGtUGG+oZsZmk/mvEC6v9OSY6V0L/3L3RtXifvfuNmcesyNENxVDUldC95XfTH4xiuDrrk/+dRDRcwWjWL/szyfcy1es/T3x9D87aPbigueaYOo8tGXJUU1+fRdhbQH5tFvTro5r62fPfSXrS/RxgOqx7mRstR/exL/ntjj+xtQlu1G8PPJzGaidBcuyrnCuW95HPrMBw8jKo4idEvVyXbgRd4X3Qc3Qffol6zbD/1TXeifXMAzdnjkr//AqPR9izntp9A+89JNOv/QPXxdfRve+gAefNnB+R7yvuY678dw1fulzzXhtGlnj79P3tmn3E=</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="1264">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwllH1MVmUYxs/c1AYas9aXaR5NIvvQhitwLt/DwiggtEgjUHYyCuQF++BFMZQOb0oZGCD6qvR1KMmmE1eySjR2KCVa0tSUJakcHdMKdTpTs49R/q7zz7X7ee77uq/7ep7nGIbhbX5htmX8/934ZQbYnZF1Db2o7ieuoRMOsO7ER89ifVRyGnmRIdSZ9VOFTXvSWc8qZt/rrCLf+PsL0B2MsO+knie2ykLPiK+JPu6qj6izd+0jz2/9k77u1D743Z1xoLXoa/K9b94gz6rJyyReFpTeY1OegmfudmKz5jZ43crh4vE0rxPMIc+LHyDPCjXTz6x7ELTdAc1rz2Df33UT+X5klPxqTwHtgvuZw83IJt+5J0q6C3rk51GP/mZclnRv7wWNynnk2ykNTxIPPS0dTfLTmJ8kne2NzGeUNor/jDMX/oQY6dtd/SZ1Y5rxw949Jsh+xzbq/c5K+bNivPR39Iv38qcV5E079zL1Rfnyt/wIPGZoEvx+dcDW/sq3wFnjXkPPjhh4za5b0e+vOief96uv1RrMY/3mEfD7m06S5zzSpvPPufIqeoc9/jrxA0ela7y7hHjTv4r/uBKi34HbNc/oBHitrh7dqzKdj9vbIx3rK4qZt2SwAH1V45ZIxw3Z4L7OhfClL2Pf8BKZz2wwc+C9pX4FuLliAzjjTvngXyDfy24po673d51H98TnWV946h3iLcnU21tH1FF/sR1d9saGxeicU6h7Uzv5aeK12rfOPiqfS9qYx/5npt5d7aHn6H/dTOay8tbp3oST16BjecF79E+pF9/AtHwwcuIVMCmTPKt4it7p1Q/h8+IOV1OfNLiavMf2aJ5AK/leYjAMPpSq+femUWfcex/n7v40nX5mUuN84omr8dft2gIaH7/LujEyWT7+2N8M/7dz8Nks1P32o0Ocj9n3q/r8EJIfdwTq6b/UKpbfsfjqtuRG2B+2tJE4KrUK3pjEcvJ/uQS/Xdeje5ibgB9+m/ksuPx73b/YKHTZE66iyx/YiW7zs7Qi8K8FuZo3dit9+h6Wf/kT4DHubtd8teUl8EwaWwtv0YJC8tJrXpTO0dw3+6VB5nBO50hXbIA5vZYw52BdP5Q5zMkn0GFH4l3i9+/Sf+vyz6DnFDrgByd5537RQd6RPzaauf2v+uF1R05X/qkNeid7D+ucOr6zpV//c+OTlfrfDD+EXqO0VOcSU4MOL7yG8/YvlUj3Mb0z++1OvZdtv+m8zGb5ejxTPn1+fLb1H7qcolk=</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="11" id="controllerType=0 controllerNumber=1 scan=12" defaultArrayLength="108">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.084716796875" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="137.113754272461" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="7086.23486328125"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="51.239795684814" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="359.570465087891" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.12.12.1 File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=12&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.100888333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 353.06@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="3"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="331.08087950994428" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=10">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000041" name="charge state" value="1"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="43066.23046875" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="656">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwt0F1I01EYx/FDXUhdOBPKWg0OVg4hiKAuQoJ/u0jTnOXsbZb+zalNbdqqWcHin2QoQkShCUkNoheoC2U3ETHOrnqjRXQheHXsZkT0YkyiMoz/93T14Tnnd57n4QghUtN39lpCCGtNGp3c6loM1KKVHalzVSWL+1xTK4bqcTQadBXnn6H6VUDHKmtwtUPVmCo07Cc3dwKddxHj96Q5X8qirIgdcNUbF9Aa9Dcad6G+mAwx58M4yg0T6AxebyKXWWgye/sOMvdKEO2aEOrwmDn3VR+iT7gbnaUxlN6ew+gZMG7qPcJ+/oRxZgrV52VH6be5NEy/2xWoB/rRiSXNeeQJyq2vTf30VjNmA8fITUVQDt1He7c8zhyZRrVqooW+bypbqYMPjaXzqCcf2fTbMofixro26vx7tBc/omyrb+edpw/l9geoo8s7yY2PojP8ydRe2UWf+Va0i66i8m07yT/HOlBMdqLq3Rkln7mE9t1c1PxTXTfz/HlMXftjbP/Rw/svw6eoX1b18a7wGNWeWD/7eStPc/8t/9/fqMt9cfKvLOPKmyjL36JVkjO++Iu6uOgMuTIPOukdqJKNRs9zFJn1Z8l97ULRPI0qUnyOeiSAOn7PKBTKy7Nox3+a3NqaBPvKCwnrH0zF3Tc=</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="680">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwlUktIW1EUvG4kaSQLF4b669MgUnBRa1bi4gYklmiiScQPiUQrsQsRhCD4Qx+iuOii4mchIl4IgiBiEXRTQp+opZCiBQUpreVZcVFa/OFCtAubmbcZzj135syc+4QQxs6sV4r/392vujS2735sSKM5mI1am8n3p1FvshCtCz5g2Xkt+mokkEbDHkStt20FoVcfxT3V2oe+ShXXQ79xjPXaM+iJcIJzfWXgm84b1PJlkPxSD3j60h58tX95g77pbqFOnD51MxN95a0AiowY9A1PM3QM6xF5VwGgYXmCe8ZFH+aKnxfQ04aKQpgzd0/+6TTuaaE4UL6rhR8Rfcv8ve+p9/kac+SQjfmXX9C/9RP64mGCOl0bzFdQTp8uN/WmTlk/r6bfr/2YL2+jQG1hFX39rorvkumDT7MrzL280nDPTFxCT/1IkZ91zD2t9FD/rIQ5IhGeVx6S3+lg/3US88Xvfu7jwxp9D/hRm91WzNVrkvxPOsdQq8N9vlMkvwn1yRLmq50z8KTQ+D6L37AfFbPjXEzm8B0KHNAxcpNAMcEcssFJv/5G3NfX6VMOz9PXBv1r8dFm8J9+575Wb5lr84D/p8XNfOPcuwr/I2+8lOidZB5LLjHh7AD/j4s+8wo593jbx33/5Z5tMeTRbCnmv7/iXvOSAfkIu/7NUQ==</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="12" id="controllerType=0 controllerNumber=1 scan=13" defaultArrayLength="393">
+          <cvParam cvRef="MS" accession="MS:1000579" name="MS1 spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="1"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.080902099609" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="52617.9765625" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="4.1565121875e05"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.839214324951" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="573.942810058594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.13.13. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=13&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.108795" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms [50.00-600.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="1"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="600.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="1912">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwt0HlMFHccBfAfamOsBwKxtdHocMVQ8VjERqXWAaX1QgUPDjkGllZACqigUAsOoNbSVA411Ch1WCTxQATakFQJDGLVHioIRayJDiweRaouHg1RofE9/vrkfb/vOzO7Qghl8+ZlshBCfzefppVANfscFPeuQuWx/3LMFxynU9qg/NlzusxrBe4vhUP1h8krcbcxNADPmRAJ5doB5tJRq9BzmQmNK9egEvqG88Jpq/E8n7zAt0r/vIbim8VB2FdYoNS8fy3uIsesw3NsWVBxrVuP/eAzKCdrG2BGJVTTm6Aed43zhF3BuPPcE4K7hHpojOuHqjYAlfYRocj7ZDrOHwrvfKhnLwrDnasf3bEEKsvCoaj0Cn+rtt2P1gRA+XQm1G/uYd7TCMWGC1BJb6JVbzif+0kE+hMXQXlTZgT/7zqo/t4AhX9/BP8n30j0T+yA0tlcqE0thvIUC02upI+b2A81ReF32PlAsb4MqterodT6K9R7b9FJj6m9UNCfZQc1HxdopEdBaYzC/cUs2vwje8+ouH6MfQcLlN3vQCXkCe+rRTT2uduhsFeZ+xugFNRIjxhQ858Vg16ACWr1GvNtHRorO6ibwfkhK00ahMrOKWbsTzhD5dMoKM3YBdX7Q1ZYoDargf1YHcp7m6HedZf5vwd07CD7gSIW97VToeTkCmU5GhpxMVCZXAX1EeM/x/c5SVAdHU3jhgxSuW8+Bo0cC9S8De63dXKeOeUL9BZIUDHNpnlRUP65FmqjL7P3kEqJfzB7WunuHmqx8W7r2E3II6ZCQ5GgXkiNNmcoV7hCLd6P+41ruO+IYk5Q6D2qDDPTmFIo1VXyPa3NUHUz+Nxz1Fhv5f3R2XHwvAzV5kh6NQYqe1O4L8/i/AoVUSU0v5TWWqB0pox9cyPv1/3JvdxJy5/xOeNecP+LiMd37XeBRjsVOa70gcK9r5maj3E+UAWVUY28++gq1GZaoZ7jkoD5GVeoJLpByc4M9blUnR7LuVM2lONLuJ9m4XxPGRQeLZzP62RvrJXz4d18j+KyGe8Pc6X5Cv2wABrDrFD0djPbnkIp2MZelHMi5tmuUIv3hWqMhfn7MuYOK/PL4V/ie+a7QC2RqsJMe2LpwlTuJ+dCyVvjXXgp5x1dUJlxj/nSO0nI+9yg2ukO9aho+rcZipDjUPr0NJRTL/JO7WaudEtG/y93qD31h+LVUigPj+X+ZQ5Uc46zt+UuNDqs7CXZp6Dn7QBFNdUGHKF00wSVC4HcTwxinpHAXk0ye73V3OfUQKOT6v3X2Z/cQkcatM/G+8Q+3hcM8u6M4xbcBXtB44IPVEyBzHIQ95fioLiTAuVvt0K1QGVuLYBSYxHnwQeYk2p4t6qJ87BWutTGu2LHrXhfuQsNXkvDt9BJ26B2kCoeuVC6O2Sjxr1zC5VvUKUV6gFdUE62QhHZx32O/TY8z9MRarlDNlDplokOrqEng6Dsu5Z37VSPW0fDtkLDroi9dqo/0jmvbuHc8wZzYh/3NeNT8X+8NEH9yBwolRZCeUU1c2gjs7mFHqVKxQ1620YTHdLwfN2JdpmgMiaauT4/jf+fAfX7Dznvecp5iI19n1fMdg7b8X32zlBku0N5ognqaXO4PxUCtcMR7L1IYe91OlS2FTKnjN+BPMEDqiUmaMyT6c01UK5NYe+iCrWRReyfKuW++iSU6tvoEgOKI7PTcfeeCWqdXlB294X6v37c71oO1bxUzg/v5rzqO2gEFkJho9KhA3yefpDW2dj3+zgD9ysXQ7m4iJZbMvi8GijcWtjzbaOP2rlf3c39xue0OOkrPN+jCBo5VMy30JazUOn9ib3fmqE6s43zWwbUF3Yz3w/Yie9pPAj199ugdr4HqnrB13D6nUz0PyjMwu/NcFRxdzkzG9+R9yRb/h9LmjpD</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="2336">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>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</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="13" id="controllerType=0 controllerNumber=1 scan=14" defaultArrayLength="195">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="245.044052124023" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="2600.68505859375" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="42519.58984375"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="53.234348297119" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="353.062835693359" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.14.14. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=14&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.116028333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 331.08@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="2"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="0" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=13">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="52617.9765625" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="1044">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwtz39oVXUYx/HvYRTRSOadQqLm98oKU0wz/EecnrmFWIlz23Xq0p17LefUNTOnUDnPEaEGQpO2ITLZ915C8w9h2oJa6I5TJq5trDXpH63vFZXtYlDzF+hFy/fj/efF53me73Oeq5TST4+/56r/f39Pev+Zut1Fv+AgundbpL6zTfJov+Tajg/IvfNXP9N2la4hJ6tLeb/yGJqbtzBc+dJa+iMVaKbvQvva15JH7oqxvDLmLnejLbiCeuOw5DMLyulPVIqZJgzrfkV74C/U/RPofTVeQX0gEuOuWQk072RQvf4QbUI0uS+uI++9iG5xH6p19zBMOpXsbX8V3brV4h+H0FTWrWe+85UNzL2VEiNnxYaSjdw3aU4Vc4vyP2Rvdxn6Q/Wo911E9TBnE3lrCk3vObSX/sVwuGgze9+NoVlzEHVjP9pvTlazp/Ey2gcZ9B45Ht9bOhvDz1egKiwWIyl0rw2KMx7L3C/xOGYDUR+Oy7sUukfS6P/mJLjnvBGzoViYRvd2/hbuadFbZD4Qm46iyk9hWNYrc2NZNKecj/h/41H0Zxah/dag+t35mLqv0U6ejapqPnp7qiTXxjE8GUiuPyzvNnShWZp+njdtJY9Fa3j/5goM565FvT9AvyeJZqJkG9bEUX8foMq2ozuWlLw8jeHUDHoHnFrqI4vRzxahlx9HtzAh/WXx7bz7IkDdkxSfXkD79jV0I2mZe3RfckdW+jFnB/e1RVHljorL0uhvVzux0UH3RA6GKhdNTxR1dJX0y0ul3yaaqXExFsiewVbJR5LojVyQ9526jv74IrRT0hhWOJ9gbVRsFe1oEaopCfTnBmh0m8wtSaK7Q/RLTsh8l5X+l7qeenmAuiWJdqhbzFix4QaaoduSW9Qu9v6QhzY6HdW0WVIv1ujfWyg5p0Z84zSaH4fR++kq6qtWcusT6Zu8T5mftx/DjmE06X+kXtC4m/mOZjS9BtWfnah/HsKwqfkz8pnv0PR3ondnQOovR/Zw/7xyNJuvo/dCcwP7zvWh50ze6/4HVW+U+A==</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="1192">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwtVHtMTnEYPrlMkiF/uGxxKrRyi2+azeY7NLFSSknp4jCqIbmFoTqps5q+5B4Jx50iRnPJ7VOjrBt9a1LK2fhc+tyVMUv0PJ1/3r23533f531/RxAE7ZhbkCT8/+rzF3ZL3cdtfrc0qy8gpSPtlIY18Isd4QGI9z29oFtqiTKk2BkHux7QHAi/gyNxQ52CgVcVSByvk37QXY4jXqm3R7y0yQQc2WUAdCUyE3na12mss+8X8vRbD4lzwwh8MdsGHHPtcX/kZfnTfns88kWrG/BEzxPMMxrZb2V/xOmjv9Gf68X6lu/ECRqGeQXVH3maWkm8XgUhqDfpBeIVUxBwzEk/aB80knEdo2HXTCr6kx5FIV7PL42AbnrOugF3yZuvK/L0tqHM231FBf4Xt+Wwf1pMPksmo45u5889xM/YAPmmCH5p8FjoYmAY5wl7GYO+1rWQxwFdmEvy9lgB/8ukbYi3PF0J/Xot+btfEYk6c4vAhzAnhXgL0hJhr4lCHS1cRLwSOy6N/Nivgj/vEPFvZIRCN9QthWzPQB3x64VF0Dt+roYsb2N/uRGcoywzGdJg3QP85o/oW2nMi4VskVLgF/qSb/0b92pXlY66ITXk+9zNjYhzMgBX3jCF8w1syIG/9l4C5jtbin3oexuI03SUd1zXD/jSvVP70N+hz5DywZl8D4VVmMv87vwuxG0/jf0IFy9FIy7YkApc3cZ7c7QpwMkpzoRfldl/+IytyFOqUVeb+GE55lxrlIG7uAK40oG2Jcg7fIs8XBZyYY+rOYE+uvKAp+S9Z/1iT95TsAvva8LG9ZDXEpCnV5uwH+VBPOppz0rYT3T6dsi/FvL2bibvfLUz5pSf9Lwzx3byND+FdZ467oeepWIPWvJO4Ml9Nq9D/OF43kNpNPMbi7nvrDWwm9VLUcizarg7yf1ONvozluUj788r3KW0fzp4MefMJq+FvA9zTPAZ+Idf5Z23hkDK1o+8r+Zy3J9wKh/zin5W9CcUe6JfwVbEd++Qwf9Syyz0I7g6xwNnWSr5cPdhXp0deb1gw17E3Snkf8cQvtcmA/qXC+J4F50d2L/s4E2+rK6YS+ttYb3zj7dAKpHoU7Ik8d2NUFnf15vv2eU19is4/+Z/cuoZ7ntMLPcU8xZ3KYW/7tnTPO65yYN3FJTM99H6nfGjJPjFo35LpH/giJKA</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="14" id="controllerType=0 controllerNumber=1 scan=15" defaultArrayLength="111">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.081878662109" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="107.418449401855" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="7328.33740234375"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.041965484619" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="358.836151123047" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.15.15.1 File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=15&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.123841666667" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 353.06@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="3"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="331.0810457291463" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=13">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000041" name="charge state" value="1"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="46752.83984375" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="660">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwl0F9IU1EcwPG7UKiYVEgIKXkxggVF+QcjLDi1wnRbW62aLjfPxMpqVpaKKNl5ijAQhtZLRRcxejEoh+CGyMUHE4owLMoomEb0IEJID4NJFN9zXz78/nOuYRhmc36dMP5/s14UzQlttL6e/L5xtDY6POTrBlGtPkXj4zMv8Y9iH/VXK5gZ3exnLr4F7YUj2sBRVNkZFKWzmDlQFGBfZ6V2uQbl/eNoD8dQjb9D69B7FG3zaL50nKZ/tFr7oRbtigiq0g6d3/MLzcIcWq6GM1geDdJf8gfFvYNnyUdOaZf7UXjeoJF7i3J/4Tn2OQJoP36Iyjun476d55nftYZydXuI+aEqrT/YQL7iLmbSX9GKlTUyPxBG6ZMoFu9oDx8L0+98hPYTdYG+uLtJ3+9BmUpGiPPmtMN7ozhyAq3UOsqpsCQeSGjTltT/zxnjXkEJZoY8LdS/TaAIfUL12dVK7E5q7aaL9C8GL/HOhRFUK8WX2dtb3Ub97wttquYK+cEptDyhq+z5nURz7bu25cE18utjaE+Ux9m7o6CdO9u2osj6rtPvnLzB+zaZN7mzNIbmz0lU8RxatWUdzFX13KLetYRGYsNt6lkXyqIQ2iefo8hLocp3d7J/uh+F/zVau9NdzH1p7aYu27vFPyny3bI=</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="688">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwlUktIVGEY/ZFBlJJyZSrkDcEnZLYomowuGC3G8er4QC2U342vytJIF014FUWxjY+FJDj+6lYREWF040XIfIDTiygh54qIYMxCEEWui/Sc1eF7nXO+7/+FEHr4VqEuLnC333uJZlwd0Go5KEL+XQ9i2fMQseZkI7ZHawuYf16MuWg36jLmPvL2mgPUm/6iXztNA6qoNwb4d5ZY76qGvvkkHzx2qhd1O2sddRH+Rr1EVYr+zyvo0wNznEtW6Ndq2qCv9gdQl41z5Jk9Bo8VaaA/fzLQul5PrGef6fyg765J7l33iPvG/gGfyBPE9+3PUP+whTk91QNf5vQ6/GgdAfgVkU76mEghT/NHxNb+XcxJ4xXrjyViETDoz0VfsruYdxobJq/nKtByu5i/M1gC3aRMoNpMBNr5feDVlk/gyx64h7y4EuI7+5u5n8m9rLMb5FtLQJ8e/9OHuaYg0Nwd4d7XPrE/yUN+X4BzXx8wbl/kvdviwCPdkv+i8Ax6dq+OvFZVQ56NoSrg03/QUa+P+K5TOYzH98iruhFrnZLvu1jNu7nS+F+cMt4vPMP/0LFK/nk/faefQ9fyf8c9ZO4h381oob/fEvzWrwj7bo9QbykDfap1i/cKOpjXiny8p/ct+UMV1HtxsxzxSkMlfH3Zxj9RC5vsy9ym3sugof8HYAPdlg==</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="15" id="controllerType=0 controllerNumber=1 scan=16" defaultArrayLength="577">
+          <cvParam cvRef="MS" accession="MS:1000579" name="MS1 spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="1"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.080963134766" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="1.0470784375e05" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="7.621863125e05"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.434074401855" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="591.347045898438" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.16.16. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=16&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.1317" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms [50.00-600.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="1"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="600.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="2708">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>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</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="3376">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>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</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="16" id="controllerType=0 controllerNumber=1 scan=17" defaultArrayLength="164">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="245.044708251953" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="2526.621826171875" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="34072.609375"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="51.975051879883" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="353.065887451172" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.17.17. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=17&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.139065" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 331.08@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="2"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="0" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=16">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="1.0470784375e05" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="896">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwt0V1IFFEUB/AZBNHQcoN8CpqVKJOwgrIHRUdhK8383FXz825q6WqlttlTOGMRFRWFKUWZd7Z8yJAyy/aluptB+VKS2Us+zBiFq2FaFCam1f84Lz/+5x7uOTMjSZL2ZiFdlf49RVsz4IYEyJx7oHhYAnn9L6jMl+/FeXZYJnL6RWhaN/b9V918G4p1L6EUP0F1x7KjK7Jwnm+DZvxuyCPOL+cnUPEPQmaEZiO/ckL220/52xBUB2w5mHN9LVTiHJAP5JB9Z6C23QdFgkn1gkXIenfkws4KqCV4If/K87BPemw+5vhLyPBbUKT4nDDptAt9cf2QTawpQJ5MhixygHQGl20oxL5fdhZh3x/V+zE37Bw0r/QXo+/EYCnyXEgZ+sazIHuXWk7fKxcqea2QBRehuSAz5MQYaDpTKJ9Mg2psgPJTtxt7/NGhluSDSpsF1ZBpqo/IB/Ce882QeXWoBFuhpF2g+lgX9S0JyqkWnZdOQV4oVeK+DgWabW4oVvuglPcC8oxByO7KVfQ97VC6vwsqVy2oTU9TfUSuxn22GCjVuKHoJrWVTZTv6VCZNEhPgFz/gc7HvlN2XTqIe+osaPbIh5CDdqhuSoPaMwOKHr0GOWhAM7Mb8hSLbJFrcW/ADtVoN2RmI9VP6R7UnxtQWQpA7pLrcH+7HZopFtki16NP2CGLdpMuHfI2A6ofA5RXlR3G/l4PufEzZO32I9h7NBXybTo0PQYU9XcoF+tHMe+aAUX4EGRTJuQdUgPq/iiozm0l37ogFzcpOzqh+WiY+t+bUKqcofpPUnLMkkZUI+ZYFVDyDUPxaQaqvstNqAc4Of4AitePm+i/9h5Dro3wIs+ehTyxD4oqUtnSdRx5XkCeHNqMfSJtzepf3v1VHg==</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="1024">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwtU11IU2EY/vJiRWWIpVYqTElTEKOorK3GgSzCcmkrtTQ9JtnULH9bM9vOXDoMTUszM8mDGXYhklKE1Oq00H4WYkh/Q+WgdeFVmLPC0NWet6uX53uf5/3/GGOi4loyx/5ZqzvBazmt84DXCsUvCYcMHPRaxn8BFmfnDuHdskHrtfL4SCLeDUrSLQlLAv/GMsSVwhKBBVMu/JIzDvFkZyd0vPU4eLw6AlbpiEVc9igCPC4ghvLOR5JfdR9YModDL2TaweffRACzmG/QiR9bkY+VdAMr+1Ww0jhP+X+8oPcnLuL99CHruIV4QuFN9CnV38G7XPAUfYjx6eTP9j8CvTH6MKxZAb8UOAPL9xlJ5/HQvHqaKV+FD/TKtdMUP8pC/b7fS3P03Ux9buo1wn9lGpiLDQVf1ujPwO/2Q17mV6kHLzUDPEExpoO/RluJeJOa//sazoG/YSINcUof56HOMnUR4uT7lUP3pxV6afEq7Xfodw7VZ6c9PY9Bf9zYPNX5up3up3EC9Qi93cfAa2suhD5khPrs+5oBvN2NeGLKfsyPj8wuwbu79BL07SbEl6f3pQNXtxUjvy6f+q2m/vh74cCcW12NOmrXoH6BrbMg3+R32vMA3Z9ouV0A/vpG6OQtGvQnyl2oj1+VSXM6EUz32lGFPGyrbxbsW0cN/H2D14HfpV5GHNMDqnv2mQF555Pp/oP22IDr1CbE9zTy4GXtxvy5xS7E56RtNK9PS+uAFyZbUFdVGN5ZUT7iCEdtp9Gny5/mtYuvhV0ukW5IR/ei158DT1WZjTgdo9R/SBntS59H/TNtPfgNFU2Uv/AkrMZ+FzxPWi78C1HYl1wRBCzGqei+f2WZwTu/GnmEuFfoT2kNPwV/blcKdINn6X/scNH+Ai9WgW/eSfML7Udd8lQ89KLdCMweTmHOnCOB7trpwh2Iho209+E5qmfKhjlJF1pwL6KtE3MVFQbw+A89qFe5cgXuTbYGY378aAD9o/Jo+i9JItmZJuik5M853F+K8FDx</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="17" id="controllerType=0 controllerNumber=1 scan=18" defaultArrayLength="102">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="245.135498046875" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="239.758850097656" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="7259.84912109375"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.735694885254" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="354.733123779297" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.18.18.1 File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=18&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.146845" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 353.06@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="3"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="331.08091221460512" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=16">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000041" name="charge state" value="1"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="83086.203125" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="628">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwl0E9IVFEUx/GDRIuhhVpBhOgLoX9D00xCkDHOrYj+jGWlaWo8rzo1WdGk1TDjphct1DYRSbSZmIEh+0NkizZDxZtoY6G1qIWB8iimhZvCgjYaMd+7+vA799xzLldElN8+pETEqY5Gy7p37qLcfttc1rOm0Nq99khZLffQqSihu993lHo4gNn0OFr2rPHVX3Nul1rIi7eOcf/6B9QVq45z71ENWvEAij+CXjBn8tJzVMHPJi/UnWD/yg3GNylUpSet5DpfG/OTv1Am60+yJ5VDvfoxetdq23nPjpoO9ie6UaeTHeZfiiiN79Fr9p3CqSI6hVmT8z87ub+tvov+gw3o9Rr1y5jJGzMmt6hu+u6PY7Y1dpp3r7mI+uMwyp+baD07bHPe0INO10OTmyZsM/+7xvz6XvzWhjI2avKBMXRGIn3sG1lGbzrSj5+iMf5vcsUZ5s41naW+fQKVuzVOfh0wVg6iPE2cY+7oElpVWwbYdyOFzq5p44/QeUzvQ8nnUM9svsC8TX2oqhMov2svMa89j3p4XYK++dBl6rkBdBcKKOHgIH1f4uguZlCG3qFVzA6RH4SuMOfrHOqd/1CF9lylHs5gdu8LtJYrk9QL/qT6D6e+ykw=</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="656">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwlUl1IFFEYvUIYrYUJwj6ENeWL86APkdEqxASG7trYtv6stKkz9NKmgmYhxEJTbCNCT+FSLKxNgqCwqCEKLiJjibgi0UP1JMu8RAoiohLmSsSc83Q43z3fOd937xVCOBVJVRFCWLWVQClfE3LRmL1+D/W620C7pB516fLmHRcd8xT0jq4D7c5j9keyQDH/JOCi9naxEfz5Ifrtyb9++L47C26p0bvI+7UDX/t8hvrVAc7xJRRETqyGc3q7oXcKrrL+8zO41NEHbu+OY17RGgjjfOOIeu9r6n2j5GYM/mLuKfUTg83w9zyDzio2kadtZptcVNZKub88xH61lZju4dwLHsytTSdZ1xo5f9sw/LRHPnDFH+A9fbyPXKN6GXotXgedNPMNefbFfXDRfg467cUb5Cj6A/g43xP0c1KYW0oEgfbXLPyUXAo+xvII+pWVNeadCXPPrnX2p1O8l4MJ9pXL7HtoMX81Cu68HwM3ym7xXyzNc56BCP1PwvwnLafpK5nM2/vNd6n6wP76K9z/X577vowh10708tzThzzrT57/ouGoF/xVA86V4kL4OkVp9jf1sy5neN9bU5zfl4mgvn2NOrVNxz3+8LL/U7wdeMPL/S8VcK+bIe6RjGjYX849Bl5YCCr/AVNjzTI=</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="18" id="controllerType=0 controllerNumber=1 scan=19" defaultArrayLength="518">
+          <cvParam cvRef="MS" accession="MS:1000579" name="MS1 spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="1"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.080780029297" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="90017.765625" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="6.616354375e05"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.320091247559" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="599.631713867188" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.19.19. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=19&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.154653333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms [50.00-600.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="1"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="600.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="2468">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>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</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="3052">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>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</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="19" id="controllerType=0 controllerNumber=1 scan=20" defaultArrayLength="190">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="245.044204711914" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="3493.94775390625" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="58034.96875"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.518524169922" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="356.980346679688" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.20.20. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=20&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.161913333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 331.08@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="2"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="0" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=19">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="90017.765625" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="996">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwtz3tojXEcx/HfQ7mk2LG5FOk5J3JrLqUszTxbaq4bs6G5Pc8xO8bcbfuDOGfkH6Vhc8nt9xx/oIiSkcvx2JLCdGykKJ4nyqYmkvwxub2//nr1+X6/v+/v91NKqTUFc62/eJM60O+eOu+fet8hcc7Y+fSz5i7A65vQzPogedy5hZhdX/RPa/E7tDMjxcytctFKJjE+fsQi6g3d6D39KlZkLOb+lhDaXTNQFRZKLi4S+1eLn5+VsKdq3hLyqEviqWbUkXZUd1Up+5sHoc6ISY6/R/v27DLe1fgErWnTllKva0X/7UPUIx+JDV2oPk5aRh6aQvNWn+XkO8fQut+B3om+5ez/0A/V6wLJdbPRenwevRxPLHkj9dTZFdg1YCXnokPRD1WgV9uK9o/eq8jJevRHt4oLjdXU0/noL6pH82F4DbnoFXo9hs27azLRzI1I3lWA6nIN2qGkGAvQ+jTBId9x0OxJoMpNoj70FP3Dgcwd+ym2G1HuDUVQ95+OqspBe+AJ6d/T0r/ZjNYvT/p1bejnBWKjuZb+UQfj3aL5PIH+4KT0S1okxwLpXzIq2N8ZxvjtyahSLvoNgeR2Yx3nQxHU6x30lu1E/0IClReupB4L0L5oxMidYbTGFaDOc6ReGUVzTwLjKVfmTt8UK5311C8k0Op0UY1tEfMC6e8xqrgvFUb1Ox/NIQ7GZ0bRT+8Vm1pkPqdNrApkLtfZ8P89aKVcVFtvYfzXA3FIIJYaG7ExLLbnoDUrQL3bqGa/Hl4t/wtLznJQZyfEMtGcdUbyERdVzxWpD3uP3hhjE+9f3gutdAmaTaWSMwPUjeHN3PMiH/2sKFoTExjXR1FvcGWuLLGF/U0uqk/+FtmjtnLueAZ610XdYUr+PgX98kLJB0slH3fRPtCG5o00qpe+1HXGNvauy0S9fwSaY06idy4t9bdf0D71Q3QbtqOn0Q+uoVXtSf1gGvWTazvIp7/VkEOhWv59tbjW+gO+DImL</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="1180">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwtVHsslXEY/mnTjGwudWxMfYRCjPyhZW3f0KLjUoijIz5UnGokJkJOB4tGbuW2dL6dcimT5TIba870R9OsmKis+FKa3Nasy9Bt53n769n7vr/3ed7f83u/jzEm1ZWE8IwxdcE+uQH1s/OhBpSW7RFLfveOGVBotww3oGgeivPchAtiyWo7kLeyQ596YyYMebe24+grdKbzKgXywul84p/YCl715CLqYtMo8izoOPp4mR/q3KNa4llphI6wbQk8XHkA+vhd2Yh5P+8I5JWkL7RtAZ9g4UZzLQ0jr2/YCV72ugootarAq/b0JR9idaQz5QJdfYYH6TVdpHnmTKAjGregLvqUIS++GY8EX+Ua5V/GI6/f8KH7uvaCl4k6BXQceuJRX7uPur47h+ZuqiT9VG/iPRgGPrXFIHRZdSa9R9+5cmDui1TcPycAdcHmBFDyZOTvO1ku6tl2WcCuYLr3ig+Q37S+AP28GuhIi2Ma5BV+6chPH6J7O19JBl9X2hmcC7Ih31rjMlF3Mr0IHMwoQv7Gd9LPr05Dfk8Q7UmlHPMIrrnkY2wF+RU9mwC9eSX1WXmlAP2f07yB3afB40A+8EG/LgPPH8W9JH9VLHBIHgeezS74zHfnXUesG6sBX8QI9Q+qEsFXdBA8XOQy+WziEY3YcpX2cPZ3LfJGZuBhPycQS+bLNNfIgTyc+9ZPfnZ0wiexr5/84C1uob9jXYv+q8Mq1LWcEjFLhv9iy5Mq8K0dxh4wk91RyDvdLAVPUhrq4sdumkubU4dzY6bwW2y2OwtUlMInKaRdoPl3nILfs/X0/TZ+or1eLyBsNT+Jc6Pt9P5z4eeRv2QGfmmpjt6/obMNWJWBd+ESjmSg3mwLXwVZIfmx/oX2YTwLc/G99L3r776/DbT/3Ii6u5r2Pc8I9xMXvpLOnT856At0j0EsKOm+Gi14OI9i7Ikke0x+r9f/3/MovKta4VEPfGDRAj2XYNyHS6+HP9zkW+Kbl3eg3uOKOnOZyUY8EFMB/jBX7IXww5d8MtZg75nzM+yzuLc6CToOSnovxynsn/6DF96Nc5Rorr/2+E6ZsXUZdK/JdKgnLlDfKw3990xT6HvfmC6Gbv4Q9oe1n6H/m6bkEvIjW2l/Hmrpe3g6jflYsS3emR9fxXuKjh8pv7kf59UDujD+H44uhVU=</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="20" id="controllerType=0 controllerNumber=1 scan=21" defaultArrayLength="125">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="245.139343261719" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="236.372406005859" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="8484.779296875"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="51.406185150146" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="353.064483642578" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.21.21.1 File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=21&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.169743333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 353.06@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="3"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="331.08085848478441" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=19">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000041" name="charge state" value="1"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="75384.3203125" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="720">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwtzllIVFEcx/GDJCqSZEGIPXQzWp4yGBMfWg4ywjQuU05NGqXX3CrKbZaKBrkmIzS4FNH2INxowAKh0HwIy24lSYSViSAyxDV8CKYnkxShBb+npw+/3/n/zzlCCPv38GEphDDyLbQ7Pqj8N8O9pubeo/RVovk0isahPrRccZTbDpasqTuuKLXbyunSUvYjYygfv0ZRXl/GPdkfUX/wHcXNNA998l00f35FezjlCHMFWSjT9qHtdKneW4biVQCNnWHVv+1Fbeml2puYQnNkSfWRVdW/yTjK/p885ZditHKr0W5oRK2gReWN91EuLKBxbVH1tbvL6Uf3olUTRxH4pfK8Ur4r9PK/cBdqQ93KQI/qZwZVHgweI29OPa7+twGNW2GUiZhSBH28H950AnsdaA21ovB3oXRUVdC/mFY+7KzknZzlk9wb9Z5iPxpCLTmC5ngc5VT6afIPJ+pjmVXMmX3K/QPVmLddZ+65C40nPrQjd9C6PoNiawKl+3INPlpBazHpDOftKagl9SsPzKJ9KacWd42hUZRVx16iA3VPcz2uPkPz03s0btQ1kL+NoF0+inrTXCP3d/ec5bxoAkW34xz2elB3dqLpLjlP7ruKpphXruu/wD0y1sR7wf+2FzYzv6UN5Wp2C3lgB8rii638/954G/3nSTTXp/v552wIzdxJ1CqWVfbnB9iTHjTmDJQrsSBzqZkh+Q+Uwvzc</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="760">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwtUltIVFEUPVDjYH5I1KTkiPdDggyDVPoYNY5gD/WmlZXvuFJQGANqIPgILmIGToSIgkwxnY8IFDUCjUi0S1gUoWAwM0QNXiIbkvkIFAWxENe6X4u99zp7r73OFkLILV+VFEIY0aUre2iHniG2Uk8D7aQsHfin8BJ49XnViJs2nPp22R5q0VrE5tcM8o+cQz+ZvYK8jBxFXs7+BiqvfhEYGEZfa8tGX9ExyDmlP/FOVdyvQL839ZeRD+agrk61IFYvrjLf564EViXAN1IbEWuvfqCPdqGNc4auYa61MM2+B6ZY/54OXeZn8tSkD+9VhiDv9gze2fcqkZcfqzFXPE5GLKZ6uFezlzpcxahrwzr3CHro14M05G3Ty3mHu9FXPvdgf1Ol8D/S06DD9JWT//8O3+ePgm8UBjj3ZCZRBOG3WM4E3/o1wf7hVdStxCzzI0PU2dLFPfZ/Qt68ITkvcrYGvOQx6kgpI+qdnP8lxL1KboJvR2fY75uPOrvm6NtOAf1uzQJqMecO/o1Qj+78m7+f8+/Sb2HEyT+4CL74EEYsw+v0cVRBn9Zey3vd95dzxDR1vX1K/mYMPplnioDa+eI6zIv7qfvWOH1veMK9SzzO/i7qyt2gP41+3tFkEe/ZPUF9bQGgWH3Pd0mP6FNigXpe9hvAtYAf9XeOD8fivLcTTfRjXjEONfP+o5u8n9g2fdHpj3QXQL+qGeA/PjxEneWR6+DlDHDv18dZX7GgV/W66uQu66f4Nw==</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="21" id="controllerType=0 controllerNumber=1 scan=22" defaultArrayLength="523">
+          <cvParam cvRef="MS" accession="MS:1000579" name="MS1 spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="1"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="331.081024169922" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="60028.6328125" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="5.2887375e05"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.065402984619" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="558.066711425781" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.22.22. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=22&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.177613333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms [50.00-600.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="1"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="600.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="2492">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>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</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="3088">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>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</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="22" id="controllerType=0 controllerNumber=1 scan=23" defaultArrayLength="225">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="245.044479370117" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="4680.7626953125" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="72774.5"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="51.343601226807" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="353.062255859375" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.23.23. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=23&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.184916666667" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 331.08@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="2"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="0" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=22">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="331.079986572266" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="60028.6328125" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="1172">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwt0X9oVWUcx/HnZIQS2WU6apXyXCHcbkSSsQbp7rm3KDJ353TXm2Z6zlxrm2lm5pzYdq5IUGEMuzFxoOesyWhmzD8y+oH3uRsRlcjwR/5TdM6CmkvNCJEsVuz93V8vPt/v5zzP4RyllP7n+LO2Usq7UrliWnv2T+jcpp4jT9agWbAenR1fild/EC/dRO+7WN20uiaJqrgWzUiLePsV9HZeQ+fxZzLThkeH0O+bQnVjaT29iicwHH5wFe+RTaB+sgfVmSPoP3xB9itTDfQ7H13NfZMp9BreRbWiB/2nD8u+I5C8blD89Qvp/TF3Def8ch86E5Xoz9os84Ze1J21jZxf/R6GzeOo4iqLx5Zj2NSMOlO3ln5fO9qHtqJfdQrN7lF0PrRyPPdQNdpjSfS/zqF31kg+9rfkM2Jo3n+e5090rOO+H9Pr6e1+Cr0HcugM7EP188eyX1z3Av2FnRuYd4yivjnrRfb11kbeb145hmMp1PvTMq/fh86bBtXhXZu471/LIS9bhM7eNHoHXdTn85Kv9aE/rx9N9QnpX/1cTJTEtkh6sTKX71LS6CcyqB7bKPkr15X789Jb1i/z45+hPhjJ/JzVhIUqNHc0YNjqou95qIwv+ymDOhlJzv4m/azaTL+g0bs7jqoxhc5+0RRc6Z3Poy7rl/6CItqrR+S5S99imBiX3kdWM3kijuavKXTOWS9xXtkisTGNXquLZjCP4eUA1eIR6SUjtIOuFs7f8zaq8n60q0roBBdb5HtEMh+yXub5ibhYmUZtuxiGneh4ebSLAaruVa3Y5mI4mEd7IpD5wpPo10Yy77basBRHFS1tk++fQn92RvbzXcnpJgyXp9vlHBfD7jyqYiB5qiT5nkh6h26h12htIWfmbJH/FEe7NkLdZb3CfslcdE7H0cx30c7mJRcC9D4xqP77Rvb3jqP+/s6t9C4/It61B3V5hHbO2jZzv3ghheHvjuSKJslD21En8ui1B7LfMCA5m3+V9ywEaCZDyR+o7Xgqhvaa+1Ff1DK/sQT9Xg9Nr5H86dhML5zpXZfn/T/R61KvoR9DPZBFv+YtNHNOy9wzYjCGYSIUi6IdXheVtYPz9lagvrUN7aM9kkd9VCuH0USiPjCG/oGe1/EdH9XZYcm55E7u23QSvch9Q/5TbJf9P7UUzlc=</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="1396">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwllHtMVnUYx8+6F2sVRYLhOhaYNTJgU7uIO2VyCVAuir7K5USKgSI3BYOJJzNekmxCIZnb+55JJC9MLZjmHy1PyAtegHAWCEQ7QHMgGZNMu6xsfJ6/nj237/N9Lr+foihaSUecpiiKWhKQMCO17KoVM9KK6l05I+3BEKQ5MBe/4k6IR/o7Y4gfvfwGsiAIu/5LCHh2wzWktToNu/ZyC7o+vl1wfOfFgjuchl1reV3qe9Kor+5yiv3YfPKN97zEa50R6Kp7DvHWycXCr6gbv/1JMrq281lwFM8p4s17U4g3xlKFZ1iw8Nt5IQn/iIM8tT1gheD5id1Tl0jeyMPkq3uXkm95txOvz5qif7U0XuYVdkn8dzZI3aCsOJlXOH6j+ob0EZwgff59U+Q/OnXsp1yZ5N/tcZB3y6FTp61N5h5zjji1JQ9p+r8ieY5W6efr8zLv6La1xBXn5qJ/5ZZ5nG1fR54eIv24vhRcbwA4Wl/lR+hH2vOom7OH+uoJ8Vuz1+zCv+4O4bFtqoy4VG8q+cta6VOpnciGlxLxIXlRe7cRv6Bgk/DvzsBeNiw8RvzSwKkKk7nmTsp+X9rPHtTsHeApYzvow654V/zF0/Rt3Dot9+I4SB3jpHM3fQ4lU9+e1Sn3d/FCCXiBve+Qn/SF7LfRnYweVEMftvsF4fVgPXh243/MQ63XSqmTOy1zP9TEnsx7/sxHT8+HrzFdDZ4yvAwcc3ciuna1aQP2qX+riD/oJF7bUliH/r6vzHWiTPgO/ST7L09h7uphp+zJ5/oBdM+jFdQbyWff+vFRcHQz0iDu7FX6UW5Oyj0fm4duHbgic+w7BD/76XL4mQv/AseYfZe8xxPHN1LnibosdPcPteSnB9eDWxi6mfyjffKuf36oCOlzhjjdHSh8N4aCqxT5Y7f3XdwPbtwiuSu/7z8jPu/HPfDwjQTXSD/NfK0hvwLyXM+vQX/1j1XIznNvYu9ZInu0YtejXx+X+63sMKm/3Gqi/uZ++jFWzZE7/f0IfI3bHXJPWYeZn/LMKe5Er3mAPRm9XfA3Iwfwa5VTbuz3l31M3vTScvoZfZL3pYSP867s2E0yby1C5pnzuOy3elT+o8zQLcTHRjJfde30p+gVK5uRqQ30o5lNbyEj+tmT7gqkb+1MdAt1ohYVYk+ZfBuesfu4b3WsizmbCz8oBs+blCl7mQ+OMdgled+M8r6MBQPyfy7fAL6a0VODP3oJOMrgVuFh3eaelP5iwbkS/zk8vvtW3oWrB7/e/IjMNbxC9jy31AnutdB09MXrsSsZ3exbue9X+Qdaz4OrPpaIX78cvxXc2lLeg90o/596I4p+Lc8EvIzaFOal+jQL7otjxCvPvQYP/dJv3IWZc3Q18ZUxuvY/i4zSpQ==</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+        <spectrum index="23" id="controllerType=0 controllerNumber=1 scan=24" defaultArrayLength="128">
+          <cvParam cvRef="MS" accession="MS:1000580" name="MSn spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="2"/>
+          <cvParam cvRef="MS" accession="MS:1000130" name="positive scan" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum" value=""/>
+          <cvParam cvRef="MS" accession="MS:1000504" name="base peak m/z" value="245.137573242188" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000505" name="base peak intensity" value="138.372680664063" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+          <cvParam cvRef="MS" accession="MS:1000285" name="total ion current" value="8329.0078125"/>
+          <cvParam cvRef="MS" accession="MS:1000528" name="lowest observed m/z" value="50.047019958496" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000527" name="highest observed m/z" value="358.545501708984" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+          <cvParam cvRef="MS" accession="MS:1000796" name="spectrum title" value="20180102_No6_HCD80.24.24. File:&quot;20180102_No6_HCD80.raw&quot;, NativeID:&quot;controllerType=0 controllerNumber=1 scan=24&quot;"/>
+          <scanList count="1">
+            <cvParam cvRef="MS" accession="MS:1000795" name="no combination" value=""/>
+            <scan>
+              <cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0.192698333333" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <cvParam cvRef="MS" accession="MS:1000512" name="filter string" value="FTMS + c ESI Full ms2 353.06@hcd80.00 [50.00-360.00]"/>
+              <cvParam cvRef="MS" accession="MS:1000616" name="preset scan configuration" value="3"/>
+              <cvParam cvRef="MS" accession="MS:1000927" name="ion injection time" value="200.0" unitCvRef="UO" unitAccession="UO:0000028" unitName="millisecond"/>
+              <userParam name="[Thermo Trailer Extra]Monoisotopic M/Z:" value="0" type="xsd:float"/>
+              <scanWindowList count="1">
+                <scanWindow>
+                  <cvParam cvRef="MS" accession="MS:1000501" name="scan window lower limit" value="50.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000500" name="scan window upper limit" value="360.0" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                </scanWindow>
+              </scanWindowList>
+            </scan>
+          </scanList>
+          <precursorList count="1">
+            <precursor spectrumRef="controllerType=0 controllerNumber=1 scan=22">
+              <isolationWindow>
+                <cvParam cvRef="MS" accession="MS:1000827" name="isolation window target m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000828" name="isolation window lower offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                <cvParam cvRef="MS" accession="MS:1000829" name="isolation window upper offset" value="0.5" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              </isolationWindow>
+              <selectedIonList count="1">
+                <selectedIon>
+                  <cvParam cvRef="MS" accession="MS:1000744" name="selected ion m/z" value="353.059997558594" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+                  <cvParam cvRef="MS" accession="MS:1000042" name="peak intensity" value="51712.2265625" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+                </selectedIon>
+              </selectedIonList>
+              <activation>
+                <cvParam cvRef="MS" accession="MS:1000422" name="beam-type collision-induced dissociation" value=""/>
+                <cvParam cvRef="MS" accession="MS:1000045" name="collision energy" value="80.0" unitCvRef="UO" unitAccession="UO:0000266" unitName="electronvolt"/>
+              </activation>
+            </precursor>
+          </precursorList>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="748">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000514" name="m/z array" value="" unitCvRef="MS" unitAccession="MS:1000040" unitName="m/z"/>
+              <binary>eJwl0F9IU2EYx/GjlSVFBYViUmxIpFmC5UVQxGEp4p9MbeafTF9Nx8y2snRIUpx2EV6khsGoiDzRujGjjK0sLA+xgYMkiwVRCcdGsz+EQXShIITf9+rD73mf93nOeRVFMVYmFamKomhBl7TYjcp3qcUXQDPlNYqZtOJljYQM1ANvpIuTJfQ3zaO+Z2fpsuqQXTp+BS2xGZm3pB1m7uBFVD89R/2gt4y+pAfSpbYj7J33ovGxt5x7v7dVcD5+FzXfMKq2MVSm3qIeWkCjarASa+MoNv5EPZZ6lPvWTOnVSlQW+tAyvcZOPZKJ6mgR6hEnmn2P0Zj4I3NDbhX9k34U9VnHmBPMlrbkoTFikznxlrQ0iOJzTzW5+yYarrB0RV4N+++/RMNXUcueEScqlwvqMHpb2j+B+lIENUfHcTnnAppP9taTd19Hs27VCeY/3I96vA8t/owGvkvrRz03gNrUB1SfpTTisAdF+B7qvxIEdjejuDSG5rk5VPdZm6jnd6DZU9ZMfYMLRbbtJP/x91qLfOdRFL1R1GfLW6lbp1vle2x34OQXtISSnZy/96JQp9qYX7r5FH3pjaiXHWqnvisfFWsBGrme09RXl7gwx47iTjWaQ8lu+h+lounwo7G49gxz+/+hNrv1LPWBHLR8e4fmjRiKp4kdzJ9bh1r6DlTaC2U9+gqNA8Z5XB+Whjo72eOJSwt/oJpV0kUOuVF1DqDo+ipzzSYP+YXTo/4H+qsItQ==</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="780">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJwlUm1Ik1EUvoSVg0H5gfRHfQkiE4s57EcR7iYImit71zSYaDdHVjCpX4UaeItQYlBIUkSFb2g/gqSxKIqmvuCClkVQRNQYvKEiiDOERSFIsef59XDOec45z3nuFULojbKjUgihdnuP51EsD7bk0XrX3ppHeyF+LI/yTT3yytcNntF9B3065Ude/JPgW8sZP/ih68TAAeTFwlnOaXxMXi51AriyFzxRM4666Bo5gvxiJoB49FEz9oRj2Cd+50zMKX4Jnsy+QJ+TqULdvjCPeeruYeTthufkN01At5UeA88JV2K/8aUCebunDSgnD4JvpJm3PNvBtzYivMdM0a8/ArEtCqBTu1apry5J32bO08/oLNB5Vch5SS/41vBm+lbmoo/rW9rR1xvhPH89fZt2qO9+ELEqTwBlxSf6GPnKueVr9LdrjjpuFJJfo8mP/aVulQZPRX+hT69W0veJ14jVtSvExD3yBmt5v3eA859NwR+nP0of3SHuc+d4V98t6tUlxKff6WtHK/rEwwecO1CEPmORforOcdTtDztZ3xajj4Gf3F/dxHqJBFprIepMnmS/qxh9ejrB/+l+S/991Gct7YG/qmeO71ZQjfnOoTq+z7wPc/XlItS12UzfnkzRp8/rqCuXh+9ytQr/x2kcpn/ZltOId93m/7n4Hjx9ahN1rGTZd24ffHIa9vOetpEQ9IWDyBtj3CNlnHu3/uD8Wg/r/d/oa7aX7zs0SX7pEGLjJt9Jm5foz+hH9i/18Z/sOMN740FT/gcFhfmG</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </spectrum>
+      </spectrumList>
+      <chromatogramList count="1" defaultDataProcessingRef="pwiz_Reader_Thermo_conversion">
+        <chromatogram index="0" id="TIC" defaultArrayLength="24">
+          <cvParam cvRef="MS" accession="MS:1000235" name="total ion current chromatogram" value=""/>
+          <binaryDataArrayList count="2">
+            <binaryDataArray encodedLength="272">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000595" name="time array" value="" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/>
+              <binary>eJwBwAA//zO3VSPOnZM/fQI7EddEmT+KlinTVaegP6nupJiWa6Q/Yz3IxSsjqD9CNqP5diWsP/4zcC2AFrA/cWI1g+X1sT8O09GEAPOzP9ZR1QRR97U/uu8r6TvStz/m8DZc0dO5P9Lj9zb92bs/O3gTaQi0vT/TKDdkFrS/P7MMcayL28A/sVWCxeHMwT8kYkok0cvCP6kocTCuy8M/WPy5e5O5xD+PurBIJrrFP/4GAKEIvMY/EsrobVmrxz8dh9THVqrIP+ntYWY=</binary>
+            </binaryDataArray>
+            <binaryDataArray encodedLength="192">
+              <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000574" name="zlib compression" value=""/>
+              <cvParam cvRef="MS" accession="MS:1000515" name="intensity array" value="" unitCvRef="MS" unitAccession="MS:1000131" unitName="number of detector counts"/>
+              <binary>eJxjYGB4IDBZwZGBgSEhuOepA5Bm8HfZCaYlJkiCxB0mGYLFFb5Yg8UTSg7JgMQb+vufgflJJ3aAaIfkLRD1a3jegNXbrNsNoh/0xIHFH3w69ASsPmzBHhC9YIqTOtgc4cUPwOI3o8HiD9gMVUDiDPFhYHMOJE86AKIbLiuD3cmQceQj2H2NLgccALYUM1c=</binary>
+            </binaryDataArray>
+          </binaryDataArrayList>
+        </chromatogram>
+      </chromatogramList>
+    </run>
+  </mzML>
+  <indexList count="2">
+    <index name="spectrum">
+      <offset idRef="controllerType=0 controllerNumber=1 scan=1">4619</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=2">13984</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=3">21463</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=4">28049</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=5">36424</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=6">44093</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=7">50592</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=8">59263</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=9">66702</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=10">73345</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=11">81540</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=12">89202</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=13">95969</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=14">103835</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=15">111390</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=16">118168</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=17">127869</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=18">135102</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=19">141809</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=20">150951</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=21">158441</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=22">165349</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=23">174550</offset>
+      <offset idRef="controllerType=0 controllerNumber=1 scan=24">182429</offset>
+    </index>
+    <index name="chromatogram">
+      <offset idRef="TIC">189386</offset>
+    </index>
+  </indexList>
+  <indexListOffset>191060</indexListOffset>
+  <fileChecksum>b5aaea27bf41415176af8e1f94b86aea0e644b5f</fileChecksum>
+</indexedmzML>
