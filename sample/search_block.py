@@ -21,7 +21,6 @@ NOISE_MOD = ["dynamic"]
 URI_BMDMS = "mysql+pymysql://{}:{}@{}/{}".format(
         Database.user_id, Database.user_password, Database.host, Database.database
     )
-REPO_SPECTRUM = info_spectrum_mysql.SpectrumRepository(db_uri=URI_BMDMS)
 
 def main(query_path_dir, instrument_type, ion_mode, precursor_mz):
     """
@@ -32,19 +31,15 @@ def main(query_path_dir, instrument_type, ion_mode, precursor_mz):
         (source code folder/sample):~$ python search_block.py <query_path_dir> <instrument_type> <ion_mode> <precursor_mz> 
 
     example:
-        (source code folder/sample):~$ python search_block.py ~/dev_vsc/bmdms-np/test/search_query_block/No6_RNXZPKOEJUFJON-UHFFFAOYSA-N/Orbitrap 'Orbitrap' '[M+H]+' '331.082'
+        (source code folder/sample):~$ python search_block.py ~/dev_vsc/bmdms-np/test/search_query_block/No6_RNXZPKOEJUFJON-UHFFFAOYSA-N/Orbitrap "Orbitrap" "[M+H]+" 331.082
 
     parameters:
-        <instrument_type> : 'Orbitrap', 'QTOF'
-        <ion_mode> : '[M+H]+', '[M+Na]+'
-        <precursor_mz> : float
+        <instrument_type> : "Orbitrap", "O", "QTOF", "Q-TOF", "Q"
+        <ion_mode> : "[M+H]+", "H", "[M+Na]+", "Na"
+        <precursor_mz> : float (see compounds.csv)
     """
-    # ion_mode = "[M+H]+"
-    # instrument_type = "Orbitrap"
-
-    # # READ mzml folder as query block
-    # query_path_dir = '/Users/chalbori/dev_vsc/bmdms-np/test/search_query_block/No6_RNXZPKOEJUFJON-UHFFFAOYSA-N/Orbitrap/'
-    # precursor_mz = 331.082
+    
+    repo_spectrum = info_spectrum_mysql.SpectrumRepository(db_uri=URI_BMDMS)
     file_list = tool_file.list_dir_except_hidden(path=query_path_dir)
     print(file_list)
     file_list.sort()
@@ -76,12 +71,12 @@ def main(query_path_dir, instrument_type, ion_mode, precursor_mz):
     print("read {} mzml file, {} spectra complete".format(len(file_list), len(query_spec_list)))
 
     # READ query block and SEARCH against bmdms
-    list_bmdms_inchikey = REPO_SPECTRUM.get_inchikey_list_metfrag_valid(
+    list_bmdms_inchikey = repo_spectrum.get_inchikey_list_metfrag_valid(
         instrument_type=instrument_type, precursor_type=ion_mode
     )
     print("bmdms inchikey #: {}\n".format(len(list_bmdms_inchikey)))
     print("bmdms_spectrum_dict_preparing... {}\n".format(datetime.datetime.now()))
-    bmdms_spectrum_dict = REPO_SPECTRUM.get_spectrum_dict_by_inchikey_choose_metfrag_valid(
+    bmdms_spectrum_dict = repo_spectrum.get_spectrum_dict_by_inchikey_choose_metfrag_valid(
         list_bmdms_inchikey,
         instrument_type=instrument_type,
         precursor_type=ion_mode,
@@ -150,7 +145,7 @@ if __name__ == '__main__':
     INSTRUMENT_TYPE = sys.argv[2]
     if INSTRUMENT_TYPE == 'Orbitrap' or INSTRUMENT_TYPE == 'O':
         INSTRUMENT_TYPE = 'Orbitrap'
-    elif INSTRUMENT_TYPE == 'QTOF' or INSTRUMENT_TYPE == 'Q':
+    elif INSTRUMENT_TYPE == 'QTOF' or INSTRUMENT_TYPE == "Q-TOF" or INSTRUMENT_TYPE == 'Q':
         INSTRUMENT_TYPE = 'QTOF'
     else:
         print('Instrument type error')
