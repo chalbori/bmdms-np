@@ -1,25 +1,41 @@
 # bmdms-np
+BMDMS-NP is a database that encompasses ESI MS/MS mass spectra of natural compounds, especially plant secondary metabolites. At present, the database contains 288,939 MS/MS spectra of 2,739 natural compounds that are commercially available.
 
-## Depends
-	Anaconda for python 3.7
-	# Numpy
-	conda install -c anaconda numpy
-	# SQLAlchemy
-  	conda install -c anaoncda sqlalchemy
-	# Pymysql
-	conda install -c anaconda pymysql
-	# Scikit Learn
-	conda install scikit-learn
-	# Pymzml
-	conda install -c bioconda pymzml
-	# RDKit
-	conda install -c rdkit rdkit
-	# Jpype1
-	conda install -c conda-forge jpype1
-	# PyFingerprint
-	pip install git+git://github.com/hcji/PyFingerprint@master
-	# Matplotlib-venn
-	conda install -c conda-forge matplotlib-venn
+![graphical_abstract](./Graphical_abstract.png)
+
+## Dependencies
+1. Anaconda for python 3.7
+
+2. JRE 8.0
+
+3. Numpy
+		
+		conda install -c anaconda numpy
+4. SQLAlchemy
+
+		conda install -c anaoncda sqlalchemy	
+5. Pymysql
+
+		conda install -c anaconda pymysql
+6. Scikit Learn
+
+		conda install scikit-learn
+7. Pymzml
+
+		conda install -c bioconda pymzml
+8. RDKit
+
+		conda install -c rdkit rdkit
+9. Jpype1
+		
+		conda install -c conda-forge jpype1
+10. PyFingerprint
+
+		pip install git+git://github.com/hcji/PyFingerprint@master
+
+11. Matplotlib-venn
+
+		conda install -c conda-forge matplotlib-venn
   
 ## Usage
-Take sample/DO_SOMETHING.py as examples for running as described in the file name.
+Take sample/search_block.py as examples for running as described in the file name.
