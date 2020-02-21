@@ -2,4 +2,4 @@ In evaluation of the performance of BMDMS-NP, the other databases (NIST17, MassB
 
 The modified form available to BMDMS-NP shouldn't be provided at here.
 
-Please give me a mail to request this file which can be used with sqlite3.
+Please send me a mail to request this file which can be used with sqlite3.
