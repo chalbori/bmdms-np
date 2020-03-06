@@ -1,8 +1,8 @@
 class Database:
-    host = ''
-    database = ''
-    user_id = ''
-    user_password = ''
+    host = '1.233.215.92'
+    database = 'bmdms-np'
+    user_id = 'bmdms'
+    user_password = 'uuXpqjnOz3x7RYO6'
 
     # @property
     # def host(self):
