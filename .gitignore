@@ -217,3 +217,4 @@ $RECYCLE.BIN/
 
 # RESOUCES FOLDER
 resources/
+out/evaluate*
