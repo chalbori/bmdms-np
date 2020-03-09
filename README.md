@@ -39,3 +39,4 @@ BMDMS-NP is a database that encompasses ESI MS/MS mass spectra of natural compou
   
 ## Usage
 Take sample/search_block.py as examples for running as described in the file name.
+To check molecular structures of compounds included in database, SDFiles in the folder out/sdfs/ are being provided.
