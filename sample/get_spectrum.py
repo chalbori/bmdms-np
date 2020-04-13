@@ -11,7 +11,7 @@ from database.accounts import Database
 
 def main(spec_id):
     """
-    Basic example script to search query block against BMDMS-NP
+    Basic example script to get information of spectrum
 
     usage:
 
@@ -33,7 +33,6 @@ if __name__ == '__main__':
     if len(sys.argv) != 2:
         print(main.__doc__)
         exit()
-    print(len(sys.argv))
     SPECTRUM_ID = sys.argv[1]
 
     main(spec_id=SPECTRUM_ID)
