@@ -33,9 +33,13 @@ BMDMS-NP is a database that encompasses ESI MS/MS mass spectra of natural compou
 
 		pip install git+git://github.com/hcji/PyFingerprint@master
 
-11. Matplotlib-venn
+11. Matplotlib-venn (optional)
 
 		conda install -c conda-forge matplotlib-venn
+
+12. Clone the code
+
+		git glone https://github.com/chalbori/bmdms-np.git
   
 ## Usage
 Take sample/search_block.py as examples for running as described in the file name.
