@@ -4,7 +4,7 @@ import sys, inspect
 CURRENT_DIR = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 PARENT_DIR = os.path.dirname(CURRENT_DIR)
 sys.path.insert(0, PARENT_DIR)
-print("sys.path: {}".format(sys.path))
+# print("sys.path: {}".format(sys.path))
 import datetime
 import multiprocessing
 import pymzml
@@ -84,6 +84,8 @@ def main(query_path_dir, instrument_type, ion_mode, precursor_mz):
         sample_num=10,
     )
 
+    repo_spectrum.close()
+    
     list_bmdms_inchikey = list(bmdms_spectrum_dict.keys())
     print("bmdms_spectrum_dict_prepared {}\n".format(datetime.datetime.now()))
     print("bmdms inchikey #: {}\n".format(len(list_bmdms_inchikey)))
@@ -134,8 +136,8 @@ def main(query_path_dir, instrument_type, ion_mode, precursor_mz):
         
         rank_index_array = tool_list.get_index_value_top_k(np.array(score_temp), 20)
         for n, rank_index in enumerate(rank_index_array):
-            if score_temp[rank_index] > 0.5:
-                print("{}th\tinchikey = {}\tscore={}".format(n+1, inchikey_temp[rank_index], score_temp[rank_index]))
+            # if score_temp[rank_index] > 0.5:
+            print("{}th\tinchikey = {}\tscore={}".format(n+1, inchikey_temp[rank_index], score_temp[rank_index]))
 
 if __name__ == '__main__':
     if len(sys.argv) < 5:
@@ -143,17 +145,17 @@ if __name__ == '__main__':
         exit()
     MZML_FOLDER = sys.argv[1]
     INSTRUMENT_TYPE = sys.argv[2]
-    if INSTRUMENT_TYPE == 'Orbitrap' or INSTRUMENT_TYPE == 'O':
+    if INSTRUMENT_TYPE in ('Orbitrap', 'O'):
         INSTRUMENT_TYPE = 'Orbitrap'
-    elif INSTRUMENT_TYPE == 'QTOF' or INSTRUMENT_TYPE == "Q-TOF" or INSTRUMENT_TYPE == 'Q':
+    elif INSTRUMENT_TYPE in ('QTOF', 'Q-TOF', 'Q'):
         INSTRUMENT_TYPE = 'QTOF'
     else:
         print('Instrument type error')
         sys.exit()
     ION_MODE = sys.argv[3]
-    if ION_MODE == '[M+H]+' or ION_MODE == 'H':
+    if ION_MODE in ('[M+H]+', 'H'):
         ION_MODE = '[M+H]+'
-    elif ION_MODE == '[M+Na]+' or ION_MODE == 'Na':
+    elif ION_MODE in ('[M+Na]+', 'Na'):
         ION_MODE = '[M+Na]+'
     else:
         print('ion mode(precursor ion) type error')
