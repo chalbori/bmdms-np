@@ -13,7 +13,7 @@ BMDMS-NP is a database that encompasses ESI MS/MS mass spectra of natural compou
 		conda install -c anaconda numpy
 4. SQLAlchemy
 
-		conda install -c anaoncda sqlalchemy	
+		conda install -c anaconda sqlalchemy	
 5. Pymysql
 
 		conda install -c anaconda pymysql
