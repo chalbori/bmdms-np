@@ -1,10 +1,10 @@
 import os
-import sys, inspect
+import sys
+import inspect
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 PARENT_DIR = os.path.dirname(CURRENT_DIR)
 sys.path.insert(0, PARENT_DIR)
-# print("sys.path: {}".format(sys.path))
 
 from database import info_chem_mysql
 from database.accounts import Database
