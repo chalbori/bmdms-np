@@ -1,5 +1,6 @@
 import os
 import csv
+from tools import tool_chemical
 
 
 def list_dir_except_hidden(path, read_sub=False):
@@ -133,3 +134,47 @@ def read_top_k(file):
         list_tp.append(int(row['TRUE']) / (int(row['TRUE']) + int(row['FALSE'])) * 100)
     f.close()
     return top_k, list_true, list_false, list_tp
+
+
+def convert_spec_to_msp(chemical, spec, peaklist):
+    result = ""
+    result += 'NAME: ' + chemical.name + '\n'
+    result += 'PRECURSORMZ: ' + str(spec.prec_mz) + '\n'
+    result += 'PRECURSORTYPE: ' + spec.prec_type + '\n'
+    result += 'FORMULA: ' + chemical.molecular_formula + '\n'
+    result += 'Ontology: ' + chemical.name + '\n'
+    result += 'INCHIKEY: ' + spec.inchikey + '\n'
+    result += 'SMILES: ' + spec.smiles + '\n'
+    result += 'RETENTIONTIME: ' + '' + '\n' 
+    result += 'CCS: ' + '' + '\n'
+    result += 'IONMODE: ' + 'Positive' + '\n'
+    result += 'INSTRUMENTTYPE: ' + spec.instrument_type + '\n'
+    result += 'INSTRUMENT: ' + '' + '\n'
+    result += 'COLLISIONENERGY: ' + str(spec.collision_energy) + '\n'
+    result += 'Comment: ' + 'spec_id=' + str(spec.spec_id) + '; ' + 'origin=BMDMS-NP' + '\n'
+    result += 'Num Peaks: ' + str(len(peaklist)) + '\n'
+    for peak in peaklist:
+        result += str(peak[0]) + '\t' + str(peak[1]) + '\n'
+
+    """
+    ref: http://prime.psc.riken.jp/compms/msdial/download/msp/MSMS-Pos-MassBankEU.msp
+    NAME: CLC_301.1468_14.3
+    PRECURSORMZ: 301.14660285217
+    PRECURSORTYPE: [M+H]+
+    FORMULA: C18H21ClN2
+    Ontology: Diphenylmethanes
+    INCHIKEY: WFNAKBGANONZEQ-UHFFFAOYNA-N
+    SMILES: CN1CCN(CC1)C(C2=CC=CC=C2)C3=CC=C(C=C3)Cl
+    RETENTIONTIME: 
+    CCS: 178.3135852
+    IONMODE: Positive
+    INSTRUMENTTYPE: LC-ESI-QFT
+    INSTRUMENT: Q Exactive Orbitrap Thermo Scientific
+    COLLISIONENERGY: 15, 30, 45, 60, 70 or 90 (nominal)
+    Comment: DB#=ET010001; origin=MassBank-EU
+    Num Peaks: 3
+    165.0694	20
+    166.0777	30
+    201.0466	1000
+    """
+    return result

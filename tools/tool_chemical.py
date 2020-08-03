@@ -29,6 +29,7 @@ def calculate_mw(input, input_mod='smi'):
     molecular_weight = Descriptors.ExactMolWt(mol)
     return molecular_weight
 
+
 def read_string(mode, string, **kwargs):
     """Read in a molecule from a string.
     Required parameters:

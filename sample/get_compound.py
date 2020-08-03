@@ -9,6 +9,7 @@ sys.path.insert(0, PARENT_DIR)
 from database import info_chem_mysql
 from database.accounts import Database
 
+
 def main(compound_id):
     """
     Basic example script to get information of compound
@@ -28,6 +29,7 @@ def main(compound_id):
     compound = repo_compound.get(c_id=compound_id)
     print(compound)
     repo_compound.close()
+
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
