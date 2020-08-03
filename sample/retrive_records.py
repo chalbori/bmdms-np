@@ -14,7 +14,7 @@ from tools import tool_file
 
 
 def main(output_file, limit=288939):
-    """
+    """di
     Basic example script to retrieve all spectral records of BMDMS-NP
 
     usage:
@@ -49,7 +49,7 @@ def main(output_file, limit=288939):
     repo_spectrum.close()
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2 and len(sys.argv) != 3:
+    if len(sys.argv) != 3:
         print(main.__doc__)
         exit()
     output_file = sys.argv[1]
