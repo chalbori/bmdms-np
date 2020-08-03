@@ -24,10 +24,6 @@ def main(output_file, limit=288939):
     example:
         (source code folder/sample):~$ python retrieve_records.py "bmdms-np.msp" "5"(max = 288939)
 
-    parameters:
-        <instrument_type> : "Orbitrap", "O", "QTOF", "Q-TOF", "Q"
-        <ion_mode> : "[M+H]+", "H", "[M+Na]+", "Na"
-        <precursor_mz> : float (see compounds.csv)
     """
     db_bmdms_uri = "mysql+pymysql://{}:{}@{}/{}".format(
         Database.user_id, Database.user_password, Database.host, Database.database
@@ -53,7 +49,7 @@ def main(output_file, limit=288939):
     repo_spectrum.close()
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2 or len(sys.argv) != 3:
+    if len(sys.argv) != 2 and len(sys.argv) != 3:
         print(main.__doc__)
         exit()
     output_file = sys.argv[1]
