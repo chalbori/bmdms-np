@@ -39,7 +39,7 @@ BMDMS-NP is a database that encompasses ESI MS/MS mass spectra of natural compou
 
 12. Clone the code
 
-		git glone https://github.com/chalbori/bmdms-np.git
+		git clone https://github.com/chalbori/bmdms-np.git
   
 ## Usage
 * To access to the BMDMS-NP spectra, please follow [this slide](https://docs.google.com/presentation/d/1jPH4rGeg08fuEK8W6AbLWAlg6b4ji_AtdHh7XH9yrio/edit?usp=sharing).
