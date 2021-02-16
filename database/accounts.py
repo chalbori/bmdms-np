@@ -1,5 +1,5 @@
 class Database:
-    host = '1.233.215.92'
+    host = 'bmdms.bmdrc.org'
     database = 'bmdms-np'
     user_id = 'bmdms'
     user_password = 'uuXpqjnOz3x7RYO6'
