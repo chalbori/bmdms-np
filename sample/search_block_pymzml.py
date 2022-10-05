@@ -13,6 +13,8 @@ from data import spectrum
 from database import info_spectrum_mysql
 from database.accounts import Database
 from tools import tool_file, tool_calculate, tool_list, tool_mzml
+from tqdm import tqdm
+
 
 NUM_PROCESSOR = multiprocessing.cpu_count() - 1
 MULTI_PROC_UNIT = NUM_PROCESSOR * 5000
@@ -64,7 +66,8 @@ def main(query_path_dir, instrument_type, ion_mode, precursor_mz):
                 spec.peaks = mzml.peaks('centroided')
                 spec.peaks = spec.peaks[spec.peaks[:, 1] != 0]
                 spec.peaks = spec.dynamic_peaks()
-                if abs(precursor_mz - spec.prec_mz) < 0.05:
+                # if abs(precursor_mz - spec.prec_mz) < 0.05:
+                if abs(precursor_mz - spec.prec_mz) < 0.5:
                     query_spec_list.append(spec)
                 # except:
                 # print('mzML converted error')
