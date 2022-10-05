@@ -6,6 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import or_
 from rdkit.Chem.rdmolfiles import SDWriter
 from data.chemical import Chemical
+from tools import tool_chemical as tc
 
 Base = declarative_base()
 
@@ -214,7 +215,7 @@ class CompoundRepository:
         writer = SDWriter(output_file)
         for compound in list_compounds:
             try:
-                mol = chemical.read_string("mol", compound.mol)
+                mol = tc.read_string("mol", compound.mol)
                 mol.SetProp("_Name", compound.name)
                 mol.SetProp("_Compound_id", compound.c_id)
                 mol.SetProp("_Scaffold", compound.scaffold if compound.scaffold else "")
