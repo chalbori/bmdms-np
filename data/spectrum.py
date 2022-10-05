@@ -1,5 +1,7 @@
 import numpy as np
 from sklearn.linear_model import LinearRegression
+from pyopenms import MSExperiment, MzMLFile, Precursor, MSSpectrum
+from data.chemical import Chemical
 
 
 class Spectrum:
@@ -336,3 +338,34 @@ class Spectrum:
 
     def __ne__(self, other):
         return not self.__eq__(other)
+
+    @staticmethod
+    def build_spec(
+        spec_id: str,
+        precursor: Precursor,
+        precursor_type,
+        spectrum: MSSpectrum,
+        compound: Chemical,
+        instrument_type: str
+    ):
+        spec = Spectrum()
+        spec.spec_id = spec_id
+        spec.c_id = compound.c_id
+        spec.bmdms_id = compound.bmdms_id
+        spec.native_id_in_mzml = spectrum.getNativeID()
+        spec.instrument_type = instrument_type
+        spec.retention_time = spectrum.getRT()
+        spec.prec_type = precursor_type
+        spec.prec_mz = precursor.getMZ()
+        spec.collision_energy = precursor.getMetaValue("collision energy")
+        spec.ms_level = spectrum.getMSLevel()
+        spec.tic = spectrum.getTIC()
+        peak_list = []
+        for p in spectrum:
+            peak_list.append([p.getMZ(), p.getIntensity()])
+        spec.peaks = np.array(peak_list)
+        spec.peaks = spec.peaks[spec.peaks[:, 1] != 0]
+        spec.noise_dynamic = (
+            spec.estimate_noise_dynamic()
+        )  # 노이즈 제거가 여기에 들어가는 게 맞을지. MS3 peak 추출 후에 noise 제거가 되어야할 수 있음.
+        return spec

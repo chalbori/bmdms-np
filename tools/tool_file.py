@@ -3,17 +3,19 @@ import csv
 from tools import tool_chemical
 
 
-def list_dir_except_hidden(path, read_sub=False):
+def list_dir_except_hidden(path, suffix="", read_sub=False):
     file_list = []
     if read_sub:
         for path, _, files in os.walk(path):
             for name in files:
                 if not name.startswith('.'):
-                    file_list.append(os.path.join(path, name))
+                    if name.endswith(suffix):
+                        file_list.append(os.path.join(path, name))
     else:
         for file_name in os.listdir(path):
             if not file_name.startswith('.'):
-                file_list.append(os.path.join(path, file_name))
+                if file_name.endswith(suffix):
+                    file_list.append(os.path.join(path, file_name))
     file_list.sort()
     return file_list
 
