@@ -87,14 +87,14 @@ class SimilarityCalculator:
         cluster_peak2 = copy.deepcopy(merged_cluster)
 
         for bin in cluster_peak1:
-            for peak in bin:
+            for peak in bin[:]:
                 if peak[0] in dict_pl1_keys:
                     peak[1] = dict_pl1.get(peak[0])
                 else:
                     bin.remove(peak)
 
         for bin in cluster_peak2:
-            for peak in bin:
+            for peak in bin[:]:
                 if peak[0] in dict_pl2_keys:
                     peak[1] = dict_pl2.get(peak[0])
                 else:
