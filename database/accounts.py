@@ -1,8 +1,10 @@
 class Database:
-    host = '1.233.215.92'
-    database = 'bmdms-np_210427'
-    user_id = 'bmdms'
-    user_password = 'uuXpqjnOz3x7RYO6'
+    # The public BMDMS-NP server is no longer reachable from outside the BMDRC network.
+    # Set these values to a MySQL/MariaDB database that you host yourself.
+    host = 'localhost'
+    database = 'bmdms-np'
+    user_id = 'your_user_id'
+    user_password = 'your_password'
 
     # @property
     # def host(self):
