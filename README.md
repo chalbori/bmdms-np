@@ -12,7 +12,9 @@ Instead, an export of the two database tables, `info_compound` and `info_spectru
 ### JSON export
 * The file contains the `info_compound` and `info_spectrum` tables for all compounds and spectra. The two tables are linked through the `c_id` column.
 * JSON is used instead of CSV because some compound names contain commas or quotation marks.
-* `collision_energy` values (10, 20, 40, 60 and 80) are in **eV**, not normalized collision energy (NCE, %).
+* `collision_energy` values (10, 20, 40, 60 and 80) depend on the instrument type:
+  * `Orbitrap`: **normalized collision energy (NCE, %)** as set on the instrument. Converted mzML files label these values as eV, but they are NCE. For singly charged precursors, the applied energy is approximately NCE × (m/z) / 500 eV.
+  * `QTOF`: absolute collision energy in **eV**.
 * `instrument_type` values:
   * `Orbitrap`: Orbitrap Elite mass spectrometer (Thermo Scientific), fragmentation by HCD
   * `QTOF`: SYNAPT G2-S MS (Waters), fragmentation by CID
