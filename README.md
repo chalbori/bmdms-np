@@ -32,6 +32,11 @@ peaks = np.load(io.BytesIO(bytes.fromhex(record["peaks"][2:])))  # columns: m/z,
 ### GNPS version
 BMDMS-NP is also distributed through GNPS. When the library was deposited, GNPS assigned its own spectrum IDs and reprocessed the spectra to its own standards; our `spec_id`, collision energy and instrument type were not retained. GNPS records therefore cannot be matched to the database by order or ID. To link them, compare spectra by similarity (e.g. cosine with an m/z tolerance) among spectra that share the same InChIKey and precursor type.
 
+## Notes on the paper
+Two details in the paper (Lee et al., *Phytochemistry* 2020) differ from the data in the library:
+* **Collision energy units.** Sections 2.2 and 4.1 and Table 1 describe the collision energies (10, 20, 40, 60 and 80) as eV for all spectra. This is correct only for `QTOF` spectra; for `Orbitrap` spectra the values are normalized collision energies (NCE, %). See [JSON export](#json-export).
+* **Instruments.** Section 4.1 also lists a TripleTOF 5600+ System (SCIEX). Spectra from this instrument are not included in the library; all `QTOF` spectra come from the SYNAPT G2-S MS (Waters).
+
 ## Dependencies
 1. Anaconda for python 3.7 and create & activate a virtual environment
 
